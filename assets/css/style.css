@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- Header and Footer Styles --- */
 header {
-    background-color: #8ee1fa;
+    background-color: #d4f5ff;
     color: #000000;
     padding: 1.5rem 0;
     text-align: center;
@@ -53,7 +53,7 @@ footer {
 }
 
 footer a {
-    color: #90c5ea; /* A lighter blue that meets AAA on the dark background */
+    color: #ffffff; /* A lighter blue that meets AAA on the dark background */
     text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ footer a:focus {
 
 /* --- Navigation Bar Styles (AAA Compliant) --- */
 nav {
-background-color: #d4c8ff;
+background-color: #8ee1fa;
 box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 padding: 0.5rem 0;
 }
@@ -79,7 +79,7 @@ flex-wrap: wrap;
 }
 nav ul li a {
 display: block;
-color: #ecf0f1;
+color: #000000;
 text-align: center;
 padding: 12px 20px;
 text-decoration: none;
