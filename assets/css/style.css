@@ -22,15 +22,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- Header and Footer Styles --- */
 header {
-    background-color: #d4f5ff;
-    color: #ffffff;
+    background-color: #8ee1fa;
+    color: #000000;
     padding: 1.5rem 0;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
 }
 
 header h1 {
-    color: #ffffff;
+    color: #000000;
     margin: 0;
     font-size: 2.5em;
 }
@@ -46,8 +46,8 @@ footer {
     text-align: center;
     padding: 25px;
     margin-top: 40px;
-    background-color: #d4f5ff;
-    color: #e0e0e0;
+    background-color: #8ee1fa;
+    color: #000000;
     font-size: 0.9em;
     box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
 }
