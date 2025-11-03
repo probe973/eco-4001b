@@ -1,0 +1,40 @@
+# _config.yml
+
+# Site Settings
+title:            ECO-4001B LET Workshops
+description:      LET Workshops for the data analsyis in your course.
+author:           LET # <<< ENSURE THIS IS UPDATED WITH YOUR NAME/ORG
+
+baseurl:          "/eco-4001b" # <<< THIS MUST BE EXACTLY THIS
+
+url:              "https://probe973.github.io/eco-4001b" # <<< Left blank as per your preference.
+
+# Jekyll Build Settings
+markdown:         kramdown
+highlighter:      rouge
+plugins:
+  # No SEO plugins needed.
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - README.md
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
