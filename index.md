@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div class="explanation" markdown="1">
+<div class="instructions" markdown="1">
 # ECO-4001B Statistics LET Workshops
 
 Here you will find the workshops from the Learning Enhancement Team (LET) for your ECO-4001B module.
