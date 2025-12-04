@@ -75,6 +75,8 @@ solution_text="The sum is 117 and there are 9 data points."
 
 Using $d_i$ to represent each data point and $\bar{d}$ to represent the mean calculated above:
 
+<!-- 1. START CAPTURE: This saves the table into the variable 'num_table' -->
+{% capture num_table %}
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -97,54 +99,55 @@ Using $d_i$ to represent each data point and $\bar{d}$ to represent the mean cal
     <tr>
       <td>14</td>
       <td>1</td>
-      <!-- Input 1 -->
-      <td><<input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
     </tr>
     <tr>
       <td>14</td>
       <td>1</td>
-      <!-- Input 2 -->
-      <td><<input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
     </tr>
     <tr>
       <td>11</td>
-      <td><<input type="number" step="any"></td>
-      <td><<input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
     </tr>
     <tr>
       <td>8</td>
-      <td><<input type="number" step="any"></td>
-      <td><<input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
     </tr>
     <tr>
       <td>15</td>
-      <td><<input type="number" step="any"></td>
-      <td><<input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
     </tr>
     <tr>
-      <td>18/td>
-      <td><<input type="number" step="any"></td>
-      <td><<input type="number" step="any"></td>
+      <td>18</td>
+      <td><input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
     </tr>
     <tr>
       <td>15</td>
-      <td><<input type="number" step="any"></td>
-      <td><<input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
     </tr>
     <tr>
       <td>SUM</td>
       <td>----</td>
-      <td><<input type="number" step="any"></td>
+      <td><input type="number" step="any"></td>
     </tr>
   </tbody>
 </table>
+{% endcapture %}
+<!-- 2. END CAPTURE -->
 
+<!-- 3. Now we pass the captured 'num_table' variable to the include -->
 {% include table_fill.html 
    id="distance_ds_01" 
    title="SD Calculation"
    question_text="Complete the table below."
    table_content=num_table
-   answers="1 || 1 || -2 || 4 || -5 || 25 || 2 || 4 || 5 || 25 || 2 || 4 || 74 ||"
+   answers="1 || 1 || -2 || 4 || -5 || 25 || 2 || 4 || 5 || 25 || 2 || 4 || 74"
    tolerance="0.01" 
    solution_text="The middle column is the difference between the distance and the mean (13).  The final column is the middle column squared.  The bottom row is the sum of the third column"
 %}
