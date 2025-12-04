@@ -53,7 +53,7 @@ Another way to think about numerical data is whether it's discrete or continuous
 ---
 
 ### Check Your Understanding
-For the following variables, how would you classify them in jamovi?
+For the following variables, how would you classify them?
 
 {% include question_multiple_choice.html
     id="q_transport"
