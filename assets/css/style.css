@@ -430,3 +430,25 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+
+/* Style for the inputs inside the table */
+.table-fill-wrapper input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%; /* Or a fixed width like 80px */
+    box-sizing: border-box;
+}
+
+/* Correct answer style */
+.table-fill-wrapper input.input-correct {
+    border-color: #28a745;
+    background-color: #e6fffa;
+}
+
+/* Incorrect answer style */
+.table-fill-wrapper input.input-incorrect {
+    border-color: #dc3545;
+    background-color: #ffe6e6;
+}
