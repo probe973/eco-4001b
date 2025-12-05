@@ -17,11 +17,20 @@ They will provide you with the chance to practice questions on areas of statisti
         <div class="card-content">
             <div class="card-text">
                 <h3>Descriptive Statistics</h3>
-                <p>Types of data; summary statistics; distributions</p>
+                <p>Types of data; summary statistics</p>
             </div>
         </div>
     </a>
-
+    
+    <a href="{{ "/distributions/" | relative_url }}" class="card">
+        <div class="card-content">
+            <div class="card-text">
+                <h3>Distrobutionss</h3>
+                <p>Empirical rule for normal distributions; Chebyshev's rule</p>
+            </div>
+        </div>
+    </a>
+    
     <a href="{{ "/probability/" | relative_url }}" class="card">
         <div class="card-content">
             <div class="card-text">
@@ -31,11 +40,29 @@ They will provide you with the chance to practice questions on areas of statisti
         </div>
     </a>   
 
-    <a href="{{ "/rv/" | relative_url }}" class="card">
+    <a href="{{ "/drv/" | relative_url }}" class="card">
         <div class="card-content">
             <div class="card-text">
-                <h3>Random Variables</h3>
-                <p>Discrete; mean and variance; binomial distributions; normal distributions</p>
+                <h3>Discrete Random Variables</h3>
+                <p>Probability function; mean and variance</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="{{ "/binomial/" | relative_url }}" class="card">
+        <div class="card-content">
+            <div class="card-text">
+                <h3>Binomial Distribution</h3>
+                <p>Calculating probabilities</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="{{ "/normal/" | relative_url }}" class="card">
+        <div class="card-content">
+            <div class="card-text">
+                <h3>Normal Distribution</h3>
+                <p>Calculating probabilities</p>
             </div>
         </div>
     </a>
