@@ -49,12 +49,12 @@ The **variance** is a measure of dispersion which is a *mean of the squared dist
 
 If you collect a sample of $n$ data points, with each value represented by $x_i$, and the mean of these data represented by $\bar{x}$, then the calculation needed for the **sample variance**, $s^2$ is:
 
-$$s^2=\frac{\Sigma (x_i-\bar{x})^2}{n-1}$$
+$$s^2=\frac{\Sigma (x_i-\overline{x})^2}{n-1}$$
 
 ### Standard Deviation
 The **variance** will have units that are the square of the original units.  So, if you are measuring an item in $m$ then the variance will be in $m^2$.  It is therefore common to use the **standard deviation** to represent spread.  The standard deviation is the square root of the variance.  So for the sample standard deviation, $s$:
 
-$$s=\sqrt{\frac{\Sigma (x_i-\bar{x})^2}{n-1}}$$
+$$s=\sqrt{\frac{\Sigma (x_i-\overline{x})^2}{n-1}}$$
 
 </div>
 
@@ -73,7 +73,7 @@ tolerance="0"
 solution_text="The sum is 117 and there are 9 data points."
 %}
 
-Using $d_i$ to represent each data point and $\bar{d}$ to represent the mean calculated above:
+Using $d_i$ to represent each data point and $\overline{d}$ to represent the mean calculated above:
 
 <!-- 1. START CAPTURE: This saves the table into the variable 'num_table' -->
 {% capture num_table %}
