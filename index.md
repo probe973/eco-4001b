@@ -25,7 +25,7 @@ They will provide you with the chance to practice questions on areas of statisti
     <a href="{{ "/distributions/" | relative_url }}" class="card">
         <div class="card-content">
             <div class="card-text">
-                <h3>Distrobutionss</h3>
+                <h3>Distributions</h3>
                 <p>Empirical rule for normal distributions; Chebyshev's rule</p>
             </div>
         </div>
