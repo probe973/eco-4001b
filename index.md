@@ -26,7 +26,7 @@ They will provide you with the chance to practice questions on areas of statisti
         <div class="card-content">
             <div class="card-text">
                 <h3>Distributions</h3>
-                <p>Empirical rule for normal distributions; Chebyshev's rule</p>
+                <p>Frequency tables; relative frequency; Empirical rule for normal distributions; Chebyshev's rule</p>
             </div>
         </div>
     </a>
