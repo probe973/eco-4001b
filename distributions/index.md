@@ -23,4 +23,4 @@ The **normal distribution** is the most widely applied theoretical model in stat
 * Chebyshev's rule
 
 
-<a href="{{ "/descriptive/01-frequency.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
+<a href="{{ "/distributions/01-frequency.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
