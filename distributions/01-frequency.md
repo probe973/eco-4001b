@@ -110,7 +110,7 @@ A bar sells scratch cards, for £3, where the customer can win between £0 and �
 
 {% include table_fill.html 
    id="distance_ds_01" 
-   title="SD Calculation"
+   title="Frequncy Calculations"
    question_text="Complete the relative and cumulative relative frequency columns, to 3 decimal places."
    table_content=freq_table
    answers="0.168 || 0.6 || 0.124 || 0.724 || 0.132 || 0.856 || 0.048 || 0.904 || 0.032 || 0.936 || 0.036 || 0.972 || 0.02 || 0.992 || 0.004 || 0.996 || 0.004 || 1"
