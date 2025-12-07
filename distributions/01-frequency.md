@@ -76,7 +76,7 @@ A bar sells scratch cards, for £3, where the customer can win between £0 and �
     </tr>
     <tr>
       <td>6</td>
-      <td>8></td>
+      <td>8</td>
       <td><input type="number" step="any"></td>
       <td><input type="number" step="any"></td>
     </tr>
