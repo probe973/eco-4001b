@@ -42,7 +42,7 @@ title="Chebyshev 2"
 question_text="What is the maxmimum proportion (giving answer as a percentage) of observations that lie beyond 2 standard deviations of the mean?"
 correct_answer="25"
 tolerance="0.005"
-solution_text="$frac{1}{2^2}=\frac{1}{4}$"
+solution_text="$\frac{1}{2^2}=\frac{1}{4}$"
 %}
 
 {% include question_numerical.html
