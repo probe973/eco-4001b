@@ -9,7 +9,7 @@ title: Frequency table
 
 Distributions that are described as **normally distributed** have a particular shape and have defined characteristics.
 
-* **Symmetry**: The curve is perfectly symmetrical around its center, meaning the left side is a mirror image of the right.
+* **Symmetry**: The curve is perfectly symmetrical around its centre, meaning the left side is a mirror image of the right.
 * **Bell Shape**: It forms a distinctive bell curve, with the highest point at the mean and tails that extend infinitely but never touch the x-axis (asymptotic).
 * **Central Tendency**: The mean, median, and mode are all identical and located at the peak (center) of the distribution.
 * **Defined by Mean & Standard Deviation**: Only two parameters, the mean (μ, center) and standard deviation (σ, spread), are needed to describe any normal distribution.
