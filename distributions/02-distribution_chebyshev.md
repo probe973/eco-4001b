@@ -30,7 +30,7 @@ $$\frac{1}{k^2}$$
 {% include question_numerical.html
 id="Cdist1"
 title="Chebyshev 1"
-question_text="What is the minimum proportion (giving answer as a percentage) of observations that lie within $sqrt{2}$ standard deviations of the mean?"
+question_text="What is the minimum proportion (giving answer as a percentage) of observations that lie within $\sqrt{2}$ standard deviations of the mean?"
 correct_answer="50"
 tolerance="0.005"
 solution_text="$1-\frac{1}{\sqrt{2}^2}=$1-\frac{1}{2}=\frac{1}{2}=50\%$"
