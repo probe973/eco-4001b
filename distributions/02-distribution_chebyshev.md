@@ -33,7 +33,7 @@ title="Chebyshev 1"
 question_text="What is the minimum proportion (giving answer as a percentage) of observations that lie within $\sqrt{2}$ standard deviations of the mean?"
 correct_answer="50"
 tolerance="0.005"
-solution_text="$1-\frac{1}{\sqrt{2}^2}=$1-\frac{1}{2}=\frac{1}{2}=50\%$"
+solution_text="$1-\frac{1}{\sqrt{2}^2}=1-\frac{1}{2}$"
 %}
 
 {% include question_numerical.html
@@ -42,7 +42,7 @@ title="Chebyshev 2"
 question_text="What is the maxmimum proportion (giving answer as a percentage) of observations that lie beyond 2 standard deviations of the mean?"
 correct_answer="25"
 tolerance="0.005"
-solution_text="$frac{1}{2^2}=\frac{1}{4}=25\%$"
+solution_text="$frac{1}{2^2}=\frac{1}{4}$"
 %}
 
 {% include question_numerical.html
@@ -51,7 +51,7 @@ title="Chebyshev 3"
 question_text="A distribution has a mean value of 50 and a standard deviation of 5. What is the minimum proportion of observations (giving answer as a percentage) that are between 40 and 60?"
 correct_answer="75"
 tolerance="0.005"
-solution_text="40 is 2 standard deviations below the mean, 60 is 2 standard deviations above the mean.  Chebyshev using $k=2$, gives 75\%"
+solution_text="40 is 2 standard deviations below the mean, 60 is 2 standard deviations above the mean.  Chebyshev using $k=2$."
 %}
 
 {% include question_multiple_choice.html
