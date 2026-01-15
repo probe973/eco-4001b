@@ -18,8 +18,9 @@ Descriptive statistics are used to summarise data.  They include things such as
 
 ### Topics in this workshop
 
-* Types of data
-* Calculating statistics of mean, median, variance and standard deviation
+* <a href="{{ "/descriptive/01-types-of-data.html" | relative_url ))">Types of data</a>
+* <a href="{{ "/descriptive/02-calculating-averages.html" | relative_url ))">Measures of average</a>
+* <a href="{{ "/descriptive/03-calculating-dispersion.html" | relative_url ))">Measures of dispersion</a>
 
 ### PDF for printing purposes
 
