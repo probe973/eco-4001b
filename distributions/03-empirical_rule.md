@@ -50,7 +50,7 @@ This information allows you to know that if a distribution is normally distribut
     question_text="Approximately what proportion of data lie above 1 standard deviations below the mean, given the data are normally distributed?"
     options="a::17%||b::34%||c::68%||d::83%||e::Not possible to tell from this information"
     correct_answer="d"
-    solution_text="By symettry 17% lie below 1 standard deviation below the mean, and the whole distribution sums to 100%"
+    solution_text="By symmetry 17% lie below 1 standard deviation below the mean, and the whole distribution sums to 100%"
 %}
 
 {% include question_numerical.html
@@ -65,7 +65,7 @@ solution_text="238 is 2 sd below the mean, and 262 is 2 sd above the mean."
 {% include question_numerical.html
 id="Ndist4"
 title="Empirical Rule 4"
-question_text="An office coffee machine distributes liquids, in a normal distribution, that have a mean volume of 250 ml and a standard deviation of 6 ml. What percentage of coffees will be over 268 ml"
+question_text="An office coffee machine distributes liquids, in a normal distribution, that have a mean volume of 250 ml and a standard deviation of 6 ml. What percentage of coffees will be over 268 ml?"
 correct_answer="0.15"
 tolerance="0.005"
 solution_text="268 ml is 3 sd above the mean, need to use symmetry to split the proportion outside 3 sd into two."
@@ -77,7 +77,7 @@ title="Empirical Rule 5"
 question_text="The bulb on a photocopier has a mean life of 16000 hours and a variance of 250000 square hours, and the life is normally distributed.  What percentage of bulbs last longer than 15000 hours?"
 correct_answer="97.5"
 tolerance="0.005"
-solution_text="Standard deviation is the square root of variance, 15000 hours is then 2 standard deviations below the mean.  Use symettry to work out the probability above this."
+solution_text="Standard deviation is the square root of variance, 15000 hours is then 2 standard deviations below the mean.  Use symmetry to work out the probability above this."
 %}
 
 
