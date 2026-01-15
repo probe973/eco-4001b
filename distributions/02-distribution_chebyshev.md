@@ -57,7 +57,7 @@ solution_text="40 is 2 standard deviations below the mean, 60 is 2 standard devi
 {% include question_multiple_choice.html
     id="Cdist4"
     title="Chebysev 4"
-    question_text="A distribution has a mean value of 60 and a standard deviation of 20.  What is the minimum proportion of ovservations that are between 30 and 90?"
+    question_text="A distribution has a mean value of 60 and a standard deviation of 20.  What is the minimum proportion of observations that are between 30 and 90?"
     options="a::40%||b::44%||c::50%||d::56%||e::not enough information to tell"
     correct_answer="d"
     solution_text="30 to 90 is 1.5 standard deviations, Chebyshev's rule gives 5/9 minimum within."
