@@ -49,6 +49,15 @@ A bus can be late if it's raining and a bus can be late if it's not raining.  Ad
 
 $P(\text{late}) = P(\text{raining and late}) + P(\text{not raining and late}) = 0.28 + 0.24 = 0.52$
 
+
+We can also calculate **conditional probabilities**.
+
+For example: given the bus is late, find the probability it was raining.
+
+From above we have that the probability of late being 0.52, so this is our denominator for the probability.  We can also see that the raining part of late gave a probability of 0.28.  So:
+
+$$P(\text{raining given late}) = \frac{0.28}{0.52} = 0.5385 (4 \text{ dp})$$
+
 </div>
 
 ### Questions
