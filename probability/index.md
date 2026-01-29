@@ -13,10 +13,11 @@ Probability shows the likelihood that an event happens, given as a fraction, dec
 
 ### Topics in this workshop
 
+* Single-event probability
 * Contingency tables
 * Venn diagrams
 * Tree diagrams
 * Probability rules
 
 
-<a href="{{ "/probability/01-contingency.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
+<a href="{{ "/probability/01-one-event.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
