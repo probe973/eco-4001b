@@ -8,8 +8,8 @@ title: Tree diagrams
     title="Probability Tree"
     question_text="Fill in the missing probabilities. P(Car) is given as 0.82."
     
-    label_a_top="Car"
-    label_a_bot="No Car"
+    text_a_top="Car"        
+    text_a_bot="No Car"
     
     text_b_1="Refreshments"
     text_b_2="No Ref"
