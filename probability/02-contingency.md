@@ -191,7 +191,7 @@ solution_text="There are 450 premium out of 1800."
 
 {% include question_numerical.html
 id="contingency10"
-title=10"
+title="10"
 question_text="Has a Standard or Premium membership"
 correct_answer="0.71"
 tolerance="0"
@@ -200,7 +200,7 @@ solution_text="There are a total of 1278 who have standard or premium (828 and 4
 
 {% include question_numerical.html
 id="contingency11"
-title=11"
+title="11"
 question_text="Has a Standard membership and Normal Pool booking"
 correct_answer="0.3"
 tolerance="0"
@@ -209,7 +209,7 @@ solution_text="The number of people who are standard and normal pool is 540"
 
 {% include question_numerical.html
 id="contingency12"
-title=12"
+title="12"
 question_text="Has a VIP Pool booking given that they have Basic membership"
 correct_answer="0.138"
 tolerance="0.0005"
