@@ -585,13 +585,13 @@ input[type=number] {
     }
 }
 
-/* --- TREE DIAGRAM STYLES --- */
+/* --- TREE DIAGRAM STYLES (Fixed Labels) --- */
 
 .tree-wrapper {
     position: relative;
     width: 100%;
     max-width: 700px;
-    height: 400px; /* Tall enough for 4 branches */
+    height: 400px; 
     margin: 30px auto;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -599,23 +599,23 @@ input[type=number] {
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Background Lines (SVG) */
+/* Background Lines */
 .tree-lines {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Behind inputs */
+    z-index: 1; 
     pointer-events: none;
 }
 
-/* Common style for all inputs in the tree */
+/* Inputs */
 .tree-input-zone {
     position: absolute;
-    transform: translate(-50%, -50%); /* Center on the coordinate */
+    transform: translate(-50%, -50%); 
     z-index: 20;
-    background-color: #fff; /* Hide the line behind the number */
+    background-color: #fff; 
     padding: 2px;
 }
 
@@ -628,7 +628,7 @@ input[type=number] {
     border-radius: 4px;
 }
 
-/* Validation Colors (Force Override) */
+/* Validation Colors */
 .tree-input-zone input.input-correct {
     border: 3px solid #006400 !important;
     background-color: #e8f5e9 !important;
@@ -639,7 +639,6 @@ input[type=number] {
     background-color: #fbe9e7 !important;
 }
 
-/* Static Text Values (when answer is given) */
 .tree-value {
     font-weight: bold;
     font-size: 1.1em;
@@ -649,53 +648,64 @@ input[type=number] {
     border-radius: 4px;
 }
 
-/* Labels at the end of branches */
+/* General Label Style */
 .tree-label {
     position: absolute;
-    transform: translateY(-50%); /* Vertically center */
-    left: 82%; /* Far right */
-    width: 18%; /* Remaining space */
-    line-height: 1.2;
+    transform: translate(-50%, -50%);
     font-weight: bold;
     color: #2c3e50;
-    font-size: 0.95em;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight background to clear lines if close */
+    padding: 2px 5px;
+    border-radius: 3px;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
-/* Specific Positions (Percentage based) */
+/* --- SPECIFIC POSITIONS --- */
 
-/* LEVEL 1 (First Event) */
-/* Top Branch */
+/* LEVEL 1 (A) */
+
+/* Top Branch Input */
 .pos-a-top { left: 25%; top: 25%; }
-.label-a-top { left: 42%; top: 25%; width: auto; transform: translate(-50%, -50%); } 
+/* Top Label: Moved ABOVE the input to avoid the fork */
+.label-a-top { 
+    left: 25%; 
+    top: 15%; 
+} 
 
-/* Bottom Branch */
+/* Bottom Branch Input */
 .pos-a-bot { left: 25%; top: 75%; }
-.label-a-bot { left: 42%; top: 75%; width: auto; transform: translate(-50%, -50%); }
+/* Bottom Label: Moved BELOW the input */
+.label-a-bot { 
+    left: 25%; 
+    top: 85%; 
+}
 
-/* LEVEL 2 (Second Event) */
+/* LEVEL 2 (B) */
+/* For Level 2, labels sit at the end of the branches (Right side) */
+
 /* Branch 1 (Top-Top) */
 .pos-b-1 { left: 65%; top: 12.5%; }
-.label-b-1 { top: 12.5%; }
+.label-b-1 { left: 85%; top: 12.5%; text-align: left; transform: translateY(-50%); }
 
 /* Branch 2 (Top-Bot) */
 .pos-b-2 { left: 65%; top: 37.5%; }
-.label-b-2 { top: 37.5%; }
+.label-b-2 { left: 85%; top: 37.5%; text-align: left; transform: translateY(-50%); }
 
 /* Branch 3 (Bot-Top) */
 .pos-b-3 { left: 65%; top: 62.5%; }
-.label-b-3 { top: 62.5%; }
+.label-b-3 { left: 85%; top: 62.5%; text-align: left; transform: translateY(-50%); }
 
 /* Branch 4 (Bot-Bot) */
 .pos-b-4 { left: 65%; top: 87.5%; }
-.label-b-4 { top: 87.5%; }
+.label-b-4 { left: 85%; top: 87.5%; text-align: left; transform: translateY(-50%); }
 
 /* Mobile Adjustments */
 @media (max-width: 600px) {
     .tree-wrapper { height: 350px; }
     .tree-input-zone input { width: 45px; font-size: 0.9em; }
-    .tree-label { font-size: 0.8em; left: 80%; }
+    .tree-label { font-size: 0.85em; }
     
-    /* Shift inputs slightly left on small screens to fit labels */
-    .pos-a-top, .pos-a-bot { left: 20%; }
-    .pos-b-1, .pos-b-2, .pos-b-3, .pos-b-4 { left: 60%; }
+    /* Shift Level 2 labels closer on small screens */
+    .label-b-1, .label-b-2, .label-b-3, .label-b-4 { left: 82%; }
 }
