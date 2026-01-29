@@ -1,0 +1,123 @@
+<div class="question-container" id="question-{{ include.id }}">
+    <h3 id="label-{{ include.id }}">Question: {{ include.title }}</h3>
+    
+    <div class="question-content">
+        {{ include.question_text | markdownify }}
+    </div>
+
+    <!-- Tree Wrapper -->
+    <div id="table-container-{{ include.id }}" class="tree-wrapper" role="group" aria-label="Tree Diagram">
+        
+        <!-- SVG LINES (Decorative) -->
+        <svg class="tree-lines" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <!-- Style for lines -->
+            <defs>
+                <style> .branch { stroke: #2980b9; stroke-width: 0.5; fill: none; } </style>
+            </defs>
+            
+            <!-- Level 1 Branches (Start -> A) -->
+            <path d="M0,50 L40,25" class="branch" /> <!-- Up -->
+            <path d="M0,50 L40,75" class="branch" /> <!-- Down -->
+
+            <!-- Level 2 Branches (A Top -> B) -->
+            <path d="M40,25 L80,12.5" class="branch" /> <!-- Top-Top -->
+            <path d="M40,25 L80,37.5" class="branch" /> <!-- Top-Bot -->
+
+            <!-- Level 2 Branches (A Bot -> B) -->
+            <path d="M40,75 L80,62.5" class="branch" /> <!-- Bot-Top -->
+            <path d="M40,75 L80,87.5" class="branch" /> <!-- Bot-Bot -->
+        </svg>
+
+        <!-- === LEVEL 1 INPUTS & LABELS === -->
+        
+        <!-- A Top -->
+        <div class="tree-input-zone pos-a-top">
+            {% if include.val_a_top == 'INPUT' %}
+                <input type="number" step="any" aria-label="Probability for {{ include.text_a_top }}">
+            {% else %}
+                <span class="tree-value" aria-label="{{ include.text_a_top }} probability: {{ include.val_a_top }}">{{ include.val_a_top }}</span>
+            {% endif %}
+        </div>
+        <div class="tree-label label-a-top" aria-hidden="true">{{ include.text_a_top }}</div>
+
+        <!-- A Bot -->
+        <div class="tree-input-zone pos-a-bot">
+            {% if include.val_a_bot == 'INPUT' %}
+                <input type="number" step="any" aria-label="Probability for {{ include.text_a_bot }}">
+            {% else %}
+                <span class="tree-value" aria-label="{{ include.text_a_bot }} probability: {{ include.val_a_bot }}">{{ include.val_a_bot }}</span>
+            {% endif %}
+        </div>
+        <div class="tree-label label-a-bot" aria-hidden="true">{{ include.text_a_bot }}</div>
+
+
+        <!-- === LEVEL 2 INPUTS & LABELS === -->
+
+        <!-- B1 (Top-Top) -->
+        <div class="tree-input-zone pos-b-1">
+            {% if include.val_b_1 == 'INPUT' %}
+                <input type="number" step="any" aria-label="Probability for {{ include.text_b_1 }} given {{ include.text_a_top }}">
+            {% else %}
+                <span class="tree-value">{{ include.val_b_1 }}</span>
+            {% endif %}
+        </div>
+        <div class="tree-label label-b-1" aria-hidden="true">{{ include.text_b_1 }}</div>
+
+        <!-- B2 (Top-Bot) -->
+        <div class="tree-input-zone pos-b-2">
+            {% if include.val_b_2 == 'INPUT' %}
+                <input type="number" step="any" aria-label="Probability for {{ include.text_b_2 }} given {{ include.text_a_top }}">
+            {% else %}
+                <span class="tree-value">{{ include.val_b_2 }}</span>
+            {% endif %}
+        </div>
+        <div class="tree-label label-b-2" aria-hidden="true">{{ include.text_b_2 }}</div>
+
+        <!-- B3 (Bot-Top) -->
+        <div class="tree-input-zone pos-b-3">
+            {% if include.val_b_3 == 'INPUT' %}
+                <input type="number" step="any" aria-label="Probability for {{ include.text_b_3 }} given {{ include.text_a_bot }}">
+            {% else %}
+                <span class="tree-value">{{ include.val_b_3 }}</span>
+            {% endif %}
+        </div>
+        <div class="tree-label label-b-3" aria-hidden="true">{{ include.text_b_3 }}</div>
+
+        <!-- B4 (Bot-Bot) -->
+        <div class="tree-input-zone pos-b-4">
+            {% if include.val_b_4 == 'INPUT' %}
+                <input type="number" step="any" aria-label="Probability for {{ include.text_b_4 }} given {{ include.text_a_bot }}">
+            {% else %}
+                <span class="tree-value">{{ include.val_b_4 }}</span>
+            {% endif %}
+        </div>
+        <div class="tree-label label-b-4" aria-hidden="true">{{ include.text_b_4 }}</div>
+
+    </div>
+
+    <!-- Buttons -->
+    <div style="margin-top: 15px;">
+        <button class="btn" onclick="checkTableFill('{{ include.id }}', '{{ include.answers }}', '{{ include.tolerance | default: 0 }}')">Check Answers</button>
+        
+        {% if include.solution_text %}
+            <button 
+                class="btn btn-primary solution-toggle-button" 
+                id="btn-sol-{{ include.id }}"
+                aria-expanded="false" 
+                aria-controls="solution-{{ include.id }}" 
+                onclick="toggleSolution('solution-{{ include.id }}', this)">
+                Show Solution
+            </button>
+        {% endif %}
+    </div>
+
+    <!-- Feedback -->
+    <div id="feedback-{{ include.id }}" aria-live="polite" class="feedback"></div>
+    
+    {% if include.solution_text %}
+        <div id="solution-{{ include.id }}" class="solution-content" style="display:none;">
+            <h4>Solution:</h4>
+            {{ include.solution_text | markdownify }}
+        </div>
+    {% endif %}
+</div>
