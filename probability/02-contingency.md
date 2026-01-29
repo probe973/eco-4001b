@@ -169,8 +169,8 @@ solution_text="Only looking at the 25 people who are senior, 9 of these work in 
 The company ‘The Pecs Bar & Gym’ has different levels of membership, called Basic, Standard, Premium.  There are 522 members on a Basic membership and 828 members on the Standard membership.  There is also a swimming pool, and members can either book the pool through reception (known as Normal) or can pay to have a VIP membership (which means they don’t need to book).  There are 1260 customers who have Normal pool access.  The company has a total of 1800 customers.
 
 {% include table_fill.html 
-   id="contingency8" 
-   title="8"
+   id="contingency7" 
+   title="7"
    question_text="Given the information above and in the table below, complete the two-way table:"
    table_content=contingency2
    answers="540 || 270 || 1260 || 72 || 288 || 540 || 522 || 828 || 450 || 1800"
@@ -181,8 +181,8 @@ The company ‘The Pecs Bar & Gym’ has different levels of membership, called 
 A member is selected at random, from the information given above.  Find the probability, as a decimal between 0 and 1 rounded to 3 decimal places if needed, that this member:
 
 {% include question_numerical.html
-id="contingency9"
-title="9"
+id="contingency8"
+title="8"
 question_text="Has a Premium membership"
 correct_answer="0.25"
 tolerance="0"
@@ -190,8 +190,8 @@ solution_text="There are 450 premium out of 1800."
 %}
 
 {% include question_numerical.html
-id="contingency10"
-title="10"
+id="contingency9"
+title="9"
 question_text="Has a Standard or Premium membership"
 correct_answer="0.71"
 tolerance="0"
@@ -199,8 +199,8 @@ solution_text="There are a total of 1278 who have standard or premium (828 and 4
 %}
 
 {% include question_numerical.html
-id="contingency11"
-title="11"
+id="contingency10"
+title="10"
 question_text="Has a Standard membership and Normal Pool booking"
 correct_answer="0.3"
 tolerance="0"
@@ -208,8 +208,8 @@ solution_text="The number of people who are standard and normal pool is 540"
 %}
 
 {% include question_numerical.html
-id="contingency12"
-title="12"
+id="contingency11"
+title="11"
 question_text="Has a VIP Pool booking given that they have Basic membership"
 correct_answer="0.138"
 tolerance="0.0005"
