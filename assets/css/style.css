@@ -461,21 +461,21 @@ input[type=number] {
     background-color: #ffe6e6;
 }
 
-/* --- VENN DIAGRAM STYLES (Fixed) --- */
+/* --- VENN DIAGRAM STYLES (Fixed Labels & Validation) --- */
 
 .venn-wrapper {
     position: relative;
     width: 100%;
     max-width: 600px;
     height: 350px;
-    margin: 20px auto;
+    margin: 30px auto; /* Added space for labels on top */
     border: 3px solid #2c3e50;
     background-color: #fff;
     border-radius: 4px;
     font-family: sans-serif;
 }
 
-/* The Circles - MOVED CLOSER FOR MORE OVERLAP */
+/* Circles - Balanced overlap (20%) */
 .venn-circle {
     position: absolute;
     width: 220px;
@@ -484,29 +484,39 @@ input[type=number] {
     border: 3px solid #2c3e50;
     top: 50%;
     transform: translateY(-50%);
-    background-color: transparent; /* Ensure we can see through them */
-    pointer-events: none; /* Let clicks pass through to inputs if they overlap weirdly */
+    pointer-events: none; /* Allows clicking through the circle to inputs */
 }
 
 .venn-left {
-    left: 25%; /* Increased from 15% to create more overlap */
-    border-color: #d35400; /* Orange */
+    left: 20%; /* Moved out slightly to give text room */
+    border-color: #d35400;
 }
 
 .venn-right {
-    right: 25%; /* Increased from 15% to create more overlap */
-    border-color: #2980b9; /* Blue */
+    right: 20%; /* Moved out slightly to give text room */
+    border-color: #2980b9;
 }
 
-/* Labels */
+/* Labels - Pushed AWAY from the center collision zone */
 .venn-label {
     position: absolute;
-    top: -35px;
-    width: 100%;
-    text-align: center;
+    top: -40px; /* Higher up */
+    width: 150%; /* Wider to prevent wrapping */
     font-weight: bold;
     font-size: 1.1em;
     color: #000;
+}
+
+/* Push Left Label Left */
+.venn-left .venn-label {
+    text-align: left;
+    left: -20px;
+}
+
+/* Push Right Label Right */
+.venn-right .venn-label {
+    text-align: right;
+    right: -20px;
 }
 
 /* Input Zones */
@@ -516,13 +526,13 @@ input[type=number] {
     transform: translate(-50%, -50%);
     width: 80px;
     text-align: center;
-    z-index: 10;
+    z-index: 20; /* High z-index to be clickable */
 }
 
-/* Adjusted positions for greater overlap */
+/* Positions */
 .zone-a-only { left: 15%; }
 .zone-b-only { left: 85%; }
-.zone-intersect { left: 50%; } /* Center */
+.zone-intersect { left: 50%; }
 .zone-outside { 
     top: 90%; 
     left: 90%; 
@@ -535,18 +545,20 @@ input[type=number] {
     padding: 6px;
     text-align: center;
     font-weight: bold;
-    border: 2px solid #555; /* Thicker default border for visibility */
+    border: 2px solid #555;
     border-radius: 4px;
     background-color: #fff;
+    pointer-events: auto; /* Ensures input is clickable */
 }
 
-/* --- VALIDATION OVERRIDES (Fixing the "Not Red" issue) --- */
-.venn-zone input.input-correct {
+/* --- FORCE VALIDATION COLORS (Global Override) --- */
+/* This ensures the red/green borders appear regardless of where the input is */
+input.input-correct {
     border: 3px solid #006400 !important; /* Dark Green */
     background-color: #e8f5e9 !important;
 }
 
-.venn-zone input.input-incorrect {
+input.input-incorrect {
     border: 3px solid #8b0000 !important; /* Dark Red */
     background-color: #fbe9e7 !important;
 }
@@ -559,12 +571,12 @@ input[type=number] {
     border-radius: 3px;
 }
 
-/* Mobile Responsiveness */
+/* Mobile */
 @media (max-width: 500px) {
-    .venn-wrapper { height: 280px; }
+    .venn-wrapper { height: 300px; }
     .venn-circle { width: 150px; height: 150px; }
-    .venn-left { left: 15%; }
-    .venn-right { right: 15%; }
+    .venn-left { left: 10%; }
+    .venn-right { right: 10%; }
     .zone-a-only { left: 10%; }
     .zone-b-only { left: 90%; }
 }
