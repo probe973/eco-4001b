@@ -461,34 +461,34 @@ input[type=number] {
     background-color: #ffe6e6;
 }
 
-/* --- VENN DIAGRAM STYLES (Fixed Alignment) --- */
+/* --- VENN DIAGRAM STYLES (Strict Alignment) --- */
 
 .venn-wrapper {
     position: relative;
     width: 100%;
     max-width: 600px;
-    height: 350px;
+    height: 320px; /* Reduced height slightly to keep it tight */
     margin: 40px auto;
-    border: 3px solid #2c3e50;
     background-color: #fff;
+    /* Outer "Universe" Box border */
+    border: 3px solid #2c3e50;
     border-radius: 4px;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Circles - Made wider (45% of container) to ensure inputs fit */
+/* THE CIRCLES */
 .venn-circle {
     position: absolute;
-    width: 45%; 
-    padding-bottom: 45%; /* Creates a responsive circle based on width */
-    height: 0;           /* Height handled by padding-bottom */
+    width: 50%; /* Strictly 50% width */
+    height: 260px; /* Fixed height relative to container */
     border-radius: 50%;
-    border: 3px solid #2c3e50;
+    border: 4px solid; /* Thicker borders for visibility */
     top: 50%;
     transform: translateY(-50%);
-    pointer-events: none; 
+    background-color: rgba(0, 0, 0, 0.02); /* Slight tint to show area */
+    pointer-events: none; /* Click through to inputs */
 }
 
-/* Positioned close to edges to leave room for the "Only" inputs */
 .venn-left {
     left: 5%; 
     border-color: #d35400; /* Orange */
@@ -499,77 +499,88 @@ input[type=number] {
     border-color: #2980b9; /* Blue */
 }
 
-/* Labels */
+/* LABELS */
 .venn-label {
     position: absolute;
-    top: -40px; 
-    width: 200%; /* Wide to prevent wrapping */
-    left: -50%;  /* Center relative to the circle */
+    top: -40px;
+    width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 1.1em;
-    color: #000;
+    font-size: 1.2em;
+    color: #2c3e50;
+    text-shadow: 1px 1px 0 #fff; /* Readability over lines */
 }
 
-/* Input Zones */
+/* INPUT ZONES - Absolute Positioning on the 25/50/75 grid */
 .venn-zone {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 80px;
-    text-align: center;
-    z-index: 20; 
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* 
-   POSITIONING FIX:
-   Left Input: 22% (Inside the left moon)
-   Right Input: 78% (Inside the right moon)
-   Intersect: 50% (Dead center)
-*/
-.zone-a-only { left: 22%; }
-.zone-b-only { left: 78%; }
-.zone-intersect { left: 50%; }
+.zone-a-only { left: 20%; }   /* Center of the left moon */
+.zone-b-only { left: 80%; }   /* Center of the right moon */
+.zone-intersect { left: 50%; } /* Dead center */
 
 .zone-outside { 
-    top: 90%; 
+    top: 88%; 
     left: 90%; 
     width: auto;
 }
 
+/* INPUT STYLING */
 .venn-zone input {
-    width: 60px; /* Slightly smaller to fit */
-    padding: 5px;
+    width: 75px;
+    padding: 8px 4px;
     text-align: center;
     font-weight: bold;
+    font-size: 1.1em;
     border: 2px solid #555;
     border-radius: 4px;
     background-color: #fff;
-    pointer-events: auto;
+    pointer-events: auto; /* Ensure clickable */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* --- VALIDATION COLORS (High Contrast) --- */
+/* ACCESSIBILITY & VALIDATION COLORS */
 .venn-zone input.input-correct {
-    border: 3px solid #006400 !important; 
+    border: 3px solid #006400 !important; /* Dark Green */
     background-color: #e8f5e9 !important;
 }
 
 .venn-zone input.input-incorrect {
-    border: 3px solid #8b0000 !important; 
+    border: 3px solid #8b0000 !important; /* Dark Red */
     background-color: #fbe9e7 !important;
 }
 
+/* Static Text Values (when answer is given) */
 .venn-value {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
-    background-color: rgba(255,255,255,0.9);
-    padding: 2px 5px;
-    border-radius: 3px;
+    color: #333;
+    background-color: rgba(255,255,255,0.95);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
 }
 
-/* Mobile Adjustments */
+/* Mobile Responsiveness */
 @media (max-width: 500px) {
-    .venn-wrapper { height: 280px; }
-    /* On small screens, shrink inputs slightly */
-    .venn-zone input { width: 50px; font-size: 0.9em; }
+    .venn-wrapper { height: 250px; }
+    .venn-circle { height: 180px; width: 55%; } /* Slightly larger circles on mobile */
+    .venn-left { left: 0; }
+    .venn-right { right: 0; }
+    
+    .zone-a-only { left: 18%; }
+    .zone-b-only { left: 82%; }
+    
+    .venn-zone input { 
+        width: 50px; 
+        font-size: 0.9em; 
+        padding: 4px;
+    }
 }
