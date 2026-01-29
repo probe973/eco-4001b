@@ -1,17 +1,36 @@
 // assets/js/scripts.js
 
-// Function to toggle visibility of solution content
-function toggleSolution(solutionId) {
-    const solutionElement = document.getElementById(solutionId);
-    if (solutionElement) {
-        solutionElement.classList.toggle('visible');
-        const button = solutionElement.previousElementSibling; // Get the button element (assuming it's right before the solution div)
-        if (button && button.tagName === 'BUTTON' && button.textContent.includes('Solution')) {
-            if (solutionElement.classList.contains('visible')) {
-                button.textContent = 'Hide Solution';
-            } else {
-                button.textContent = 'Show Solution';
-            }
+/**
+ * ACCESSIBLE SOLUTION TOGGLE
+ * Updated to be compatible with all question types.
+ */
+function toggleSolution(solutionId, btnElement) {
+    var solutionDiv = document.getElementById(solutionId);
+    
+    if (!solutionDiv) return;
+
+    // Check visibility (handles inline styles, classes, and computed styles)
+    var isHidden = (solutionDiv.style.display === "none" || solutionDiv.style.display === "" || !solutionDiv.classList.contains('visible'));
+
+    if (isHidden) {
+        // --- SHOW ---
+        solutionDiv.style.display = "block";
+        solutionDiv.classList.add('visible'); // Keeps your old CSS happy
+        
+        // Only try to update the button if the button was actually passed to the function
+        if (btnElement) {
+            btnElement.textContent = "Hide Solution";
+            btnElement.setAttribute("aria-expanded", "true");
+        }
+    } else {
+        // --- HIDE ---
+        solutionDiv.style.display = "none";
+        solutionDiv.classList.remove('visible');
+        
+        // Only try to update the button if the button was actually passed to the function
+        if (btnElement) {
+            btnElement.textContent = "Show Solution";
+            btnElement.setAttribute("aria-expanded", "false");
         }
     }
 }
