@@ -128,6 +128,96 @@ tolerance="0"
 solution_text="Only looking at the 25 people who are senior, 9 of these work in sales, so 9/25."
 %}
 
+
+{% capture contingency2 %}
+<table class="table table-bordered">
+  <thead>
+    <tr>
+    <th scope="col"></th>
+    <th scope="col">Basic</th>
+    <th scope="col">Standard</th>
+    <th scope="col">Premium</th>
+    <th scope="col">TOTAL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Normal pool</td>
+      <td>450</td>
+      <td><input type="number" step="any" aria-label="Frequency of normal pool and standard"></td>
+      <td><input type="number" step="any" aria-label="Frequency of normal pool and premium"></td>
+      <td><input type="number" step="any" aria-label="Frequency of normal pool total"></td>
+    </tr>
+    <tr>
+      <td>VIP pool</td>
+      <td><input type="number" step="any" aria-label="Frequency of VIP pool and basic"></td>
+      <td><input type="number" step="any" aria-label="Frequency of VIP pool and standard"></td>
+      <td>180</td>
+      <td><input type="number" step="any" aria-label="Frequency of VIP pool total"></td>
+    </tr>
+    <tr>
+      <td>TOTAL</td>
+      <td><input type="number" step="any" aria-label="Frequency of basic total"></td>
+      <td><input type="number" step="any" aria-label="Frequency of standard total"></td>
+      <td><input type="number" step="any" aria-label="Frequency of premium total"></td>
+      <td><input type="number" step="any" aria-label="Total frequency"></td>
+    </tr>
+  </tbody>
+</table>
+{% endcapture %}
+
+The company ‘The Pecs Bar & Gym’ has different levels of membership, called Basic, Standard, Premium.  There are 522 members on a Basic membership and 828 members on the Standard membership.  There is also a swimming pool, and members can either book the pool through reception (known as Normal) or can pay to have a VIP membership (which means they don’t need to book).  There are 1260 customers who have Normal pool access.  The company has a total of 1800 customers.
+
+{% include table_fill.html 
+   id="contingency8" 
+   title="8"
+   question_text="Given the information above and in the table below, complete the two-way table:"
+   table_content=contingency2
+   answers="540 || 270 || 1260 || 72 || 288 || 540 || 522 || 828 || 450 || 1800"
+   tolerance="0.01" 
+   solution_text="Fill in the information from the blurb first, then use the fact that rows add up to the row totals and columns add up to the column totals."
+%}
+
+A member is selected at random, from the information given above.  Find the probability, as a decimal between 0 and 1 rounded to 3 decimal places if needed, that this member:
+
+{% include question_numerical.html
+id="contingency9"
+title="9"
+question_text="Has a Premium membership"
+correct_answer="0.25"
+tolerance="0"
+solution_text="There are 450 premium out of 1800."
+%}
+
+{% include question_numerical.html
+id="contingency10"
+title=10"
+question_text="Has a Standard or Premium membership"
+correct_answer="0.71"
+tolerance="0"
+solution_text="There are a total of 1278 who have standard or premium (828 and 450) out of 1800"
+%}
+
+{% include question_numerical.html
+id="contingency11"
+title=11"
+question_text="Has a Standard membership and Normal Pool booking"
+correct_answer="0.3"
+tolerance="0"
+solution_text="The number of people who are standard and normal pool is 540"
+%}
+
+{% include question_numerical.html
+id="contingency12"
+title=12"
+question_text="Has a VIP Pool booking given that they have Basic membership"
+correct_answer="0.138"
+tolerance="0.0005"
+solution_text="We are aware that they have basic membership, so only now out of 522.  Look at the number of VIP pool and basic membersips there are."
+%}
+
+
+
 <div style="text-align: center; margin-top: 3em;">
     <a href="{{ "/probability/" | relative_url }}">← Return to Probability Menu</a>
 </div>
