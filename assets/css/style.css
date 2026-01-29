@@ -460,3 +460,99 @@ input[type=number] {
     border-color: #dc3545;
     background-color: #ffe6e6;
 }
+
+/* --- VENN DIAGRAM STYLES --- */
+
+.venn-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Limits width so it doesn't look stretched */
+    height: 350px;    /* Fixed height to ensure circles stay circular-ish */
+    margin: 20px auto;
+    border: 3px solid #2c3e50; /* The "Universe" Box */
+    background-color: #fff;
+    border-radius: 4px;
+    font-family: sans-serif;
+}
+
+/* The Circles */
+.venn-circle {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 3px solid #2c3e50;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center */
+    /* Accessibility: High contrast borders */
+}
+
+.venn-left {
+    left: 15%;
+    border-color: #d35400; /* Distinct color A (Orange) - AA Compliant */
+}
+
+.venn-right {
+    right: 15%;
+    border-color: #2980b9; /* Distinct color B (Blue) - AA Compliant */
+}
+
+/* Labels for the circles */
+.venn-label {
+    position: absolute;
+    top: -30px; /* Sit just above the circle */
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000;
+}
+
+/* Input Containers (Positioned over the zones) */
+.venn-zone {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    text-align: center;
+    z-index: 10; /* Ensure inputs sit ON TOP of circle borders */
+}
+
+/* Zone Positions */
+.zone-a-only { left: 20%; }
+.zone-b-only { left: 80%; }
+.zone-intersect { left: 50%; }
+.zone-outside { 
+    top: 90%; 
+    left: 90%; 
+    width: auto;
+}
+
+/* Input styling specific to Venn */
+.venn-zone input {
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+/* Static text styling (when value is given) */
+.venn-value {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.9); /* Background to read over lines */
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Responsive adjust for mobile */
+@media (max-width: 500px) {
+    .venn-wrapper { height: 250px; }
+    .venn-circle { width: 160px; height: 160px; }
+    .venn-left { left: 5%; }
+    .venn-right { right: 5%; }
+    .zone-a-only { left: 15%; }
+    .zone-b-only { left: 85%; }
+}
