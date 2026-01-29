@@ -17,7 +17,7 @@ $\cap$ - **intersection**, which in non-maths language is considered to mean **a
 
 $A' \text{ or } \bar{A}$ - **complement of A**, this means **A didn't occur**
 
-$|$ - **given** - so $P(A|B)$ means **probability of A given B has occurred**
+$\vert$ - **given** - so $P(A \vert B)$ means **probability of A given B has occurred**
 
 
 ### Some probability rules
@@ -30,7 +30,7 @@ $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
 $P(A' \cap B') = 1 - P(A \cup B)$
 
-$P(A | B) = \frac{P(A \cap B)}{P(B)} \implies P(A \cap B) = P(A | B) \times P(B)$
+$P(A \vert B) = \frac{P(A \cap B)}{P(B)} \implies P(A \cap B) = P(A \vert B) \times P(B)$
 
 ### Mutually exclusive events
 
@@ -46,7 +46,7 @@ $P(A \cup B) = P(A) + P(B)$
 
 Events $A$ and $B$ are **independent** if one event occurring makes no difference to the probability of the other event occurring, so:
 
-$P(A | B) = P(A)$
+$P(A \vert B) = P(A)$
 
 This further implies:
 
@@ -99,7 +99,7 @@ Calculate the following:
     question_text="$P(M \text{ AND } N)$"
     options="correct::1/12||wrong1::1/6||wrong2::1/8||wrong3::1/4"
     correct_answer="correct"
-    solution_text="Use $P(M \cap N) = P(M|N) \times P(N)$"
+    solution_text="Use $P(M \cap N) = P(M \vert N) \times P(N)$"
 %}
 
 {% include question_multiple_choice.html
