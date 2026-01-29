@@ -1,0 +1,85 @@
+<div class="question-container" id="question-{{ include.id }}">
+    <h3 id="label-{{ include.id }}">Question: {{ include.title }}</h3>
+    
+    <div class="question-content">
+        {{ include.question_text | markdownify }}
+    </div>
+
+    <!-- The Diagram -->
+    <!-- ID used by JS to find inputs -->
+    <div id="table-container-{{ include.id }}" class="venn-wrapper" role="img" aria-label="Venn Diagram. Rectangle containing two intersecting circles.">
+        
+        <!-- Left Circle -->
+        <div class="venn-circle venn-left">
+            <div class="venn-label" id="label-a-{{ include.id }}">{{ include.label_a }}</div>
+        </div>
+
+        <!-- Right Circle -->
+        <div class="venn-circle venn-right">
+            <div class="venn-label" id="label-b-{{ include.id }}">{{ include.label_b }}</div>
+        </div>
+
+        <!-- ZONE A ONLY -->
+        <div class="venn-zone zone-a-only">
+            {% if include.val_a == 'INPUT' %}
+                <input type="number" step="any" aria-label="{{ include.label_a }} only">
+            {% else %}
+                <span class="venn-value" aria-label="{{ include.label_a }} only: {{ include.val_a }}">{{ include.val_a }}</span>
+            {% endif %}
+        </div>
+
+        <!-- ZONE INTERSECTION -->
+        <div class="venn-zone zone-intersect">
+            {% if include.val_mid == 'INPUT' %}
+                <input type="number" step="any" aria-label="Intersection of {{ include.label_a }} and {{ include.label_b }}">
+            {% else %}
+                <span class="venn-value" aria-label="Intersection: {{ include.val_mid }}">{{ include.val_mid }}</span>
+            {% endif %}
+        </div>
+
+        <!-- ZONE B ONLY -->
+        <div class="venn-zone zone-b-only">
+            {% if include.val_b == 'INPUT' %}
+                <input type="number" step="any" aria-label="{{ include.label_b }} only">
+            {% else %}
+                <span class="venn-value" aria-label="{{ include.label_b }} only: {{ include.val_b }}">{{ include.val_b }}</span>
+            {% endif %}
+        </div>
+
+        <!-- ZONE OUTSIDE -->
+        <div class="venn-zone zone-outside">
+            {% if include.val_out == 'INPUT' %}
+                <input type="number" step="any" aria-label="Outside both circles">
+            {% else %}
+                <span class="venn-value" aria-label="Outside: {{ include.val_out }}">{{ include.val_out }}</span>
+            {% endif %}
+        </div>
+
+    </div>
+
+    <!-- Check Button (Reusing the Table Logic) -->
+    <div style="margin-top: 15px;">
+        <button class="btn" onclick="checkTableFill('{{ include.id }}', '{{ include.answers }}', '{{ include.tolerance | default: 0 }}')">Check Answers</button>
+        
+        {% if include.solution_text %}
+            <button 
+                class="btn btn-primary solution-toggle-button" 
+                id="btn-sol-{{ include.id }}"
+                aria-expanded="false" 
+                aria-controls="solution-{{ include.id }}" 
+                onclick="toggleSolution('solution-{{ include.id }}', this)">
+                Show Solution
+            </button>
+        {% endif %}
+    </div>
+
+    <!-- Feedback Area -->
+    <div id="feedback-{{ include.id }}" aria-live="polite" class="feedback"></div>
+    
+    {% if include.solution_text %}
+        <div id="solution-{{ include.id }}" class="solution-content" style="display:none;">
+            <h4>Solution:</h4>
+            {{ include.solution_text | markdownify }}
+        </div>
+    {% endif %}
+</div>
