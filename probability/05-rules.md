@@ -66,7 +66,7 @@ $$P(A) = \frac{2}{5} \hspace{1cm} P(B) = \frac{1}{4} \hspace{1cm} P(A \cap B) = 
     question_text="What is $P(A \cup B)$?"
     options="wrong1::13/20||correct::11/20||wrong2::3/7||wrong3::1/10"
     correct_answer="correct"
-    solution_text="$\frac{2}{5} + \frac{1}{4} - frac{1}{10}$.  Make sure to use a common denominator when adding and subtracting fractions, or use a calculator."
+    solution_text="$\frac{2}{5} + \frac{1}{4} - \frac{1}{10}$.  Make sure to use a common denominator when adding and subtracting fractions, or use a calculator."
 %}
 
 {% include question_multiple_choice.html
