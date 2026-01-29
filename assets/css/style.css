@@ -585,7 +585,7 @@ input[type=number] {
     }
 }
 
-/* --- TREE DIAGRAM STYLES (Fixed Labels) --- */
+/* --- TREE DIAGRAM STYLES (Standardized Layout) --- */
 
 .tree-wrapper {
     position: relative;
@@ -599,7 +599,6 @@ input[type=number] {
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Background Lines */
 .tree-lines {
     position: absolute;
     top: 0;
@@ -610,25 +609,74 @@ input[type=number] {
     pointer-events: none;
 }
 
-/* Inputs */
+/* Inputs: Centered on their coordinate */
 .tree-input-zone {
     position: absolute;
     transform: translate(-50%, -50%); 
     z-index: 20;
-    background-color: #fff; 
-    padding: 2px;
+    background-color: #fff; /* Masks the line behind it */
+    padding: 3px;
 }
 
 .tree-input-zone input {
-    width: 60px;
-    padding: 5px;
+    width: 55px;
+    padding: 4px;
     text-align: center;
     font-weight: bold;
     border: 2px solid #555;
     border-radius: 4px;
 }
 
-/* Validation Colors */
+/* Labels: Left-aligned at the node */
+.tree-label {
+    position: absolute;
+    transform: translateY(-50%); /* Vertically center on the node */
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.9); /* Hides lines behind text */
+    padding: 2px 6px;
+    white-space: nowrap;
+    z-index: 10; /* Sit above lines */
+}
+
+/* --- COORDINATES --- */
+
+/* LEVEL 1 (Event A) */
+/* SVG Line goes from (0,50) to (40,25) */
+
+/* Top Probability (Midpoint of line) */
+.pos-a-top { left: 20%; top: 37.5%; }
+/* Top Label (End of line) */
+.label-a-top { left: 40%; top: 25%; }
+
+/* Bottom Probability (Midpoint of line) */
+.pos-a-bot { left: 20%; top: 62.5%; }
+/* Bottom Label (End of line) */
+.label-a-bot { left: 40%; top: 75%; }
+
+
+/* LEVEL 2 (Event B) */
+/* SVG Lines start at 40 and end at 80 */
+
+/* Top-Top Branch */
+.pos-b-1 { left: 60%; top: 18.75%; } /* Midpoint */
+.label-b-1 { left: 80%; top: 12.5%; } /* End */
+
+/* Top-Bottom Branch */
+.pos-b-2 { left: 60%; top: 31.25%; } /* Midpoint */
+.label-b-2 { left: 80%; top: 37.5%; } /* End */
+
+/* Bottom-Top Branch */
+.pos-b-3 { left: 60%; top: 68.75%; } /* Midpoint */
+.label-b-3 { left: 80%; top: 62.5%; } /* End */
+
+/* Bottom-Bottom Branch */
+.pos-b-4 { left: 60%; top: 81.25%; } /* Midpoint */
+.label-b-4 { left: 80%; top: 87.5%; } /* End */
+
+
+/* --- VALIDATION & DISPLAY --- */
 .tree-input-zone input.input-correct {
     border: 3px solid #006400 !important;
     background-color: #e8f5e9 !important;
@@ -642,70 +690,16 @@ input[type=number] {
 .tree-value {
     font-weight: bold;
     font-size: 1.1em;
-    background-color: #fff;
     padding: 4px 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-/* General Label Style */
-.tree-label {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    color: #2c3e50;
-    font-size: 1em;
-    background-color: rgba(255, 255, 255, 0.8); /* Slight background to clear lines if close */
-    padding: 2px 5px;
-    border-radius: 3px;
-    white-space: nowrap; /* Prevent wrapping */
-}
-
-/* --- SPECIFIC POSITIONS --- */
-
-/* LEVEL 1 (A) */
-
-/* Top Branch Input */
-.pos-a-top { left: 25%; top: 25%; }
-/* Top Label: Moved ABOVE the input to avoid the fork */
-.label-a-top { 
-    left: 25%; 
-    top: 15%; 
-} 
-
-/* Bottom Branch Input */
-.pos-a-bot { left: 25%; top: 75%; }
-/* Bottom Label: Moved BELOW the input */
-.label-a-bot { 
-    left: 25%; 
-    top: 85%; 
-}
-
-/* LEVEL 2 (B) */
-/* For Level 2, labels sit at the end of the branches (Right side) */
-
-/* Branch 1 (Top-Top) */
-.pos-b-1 { left: 65%; top: 12.5%; }
-.label-b-1 { left: 85%; top: 12.5%; text-align: left; transform: translateY(-50%); }
-
-/* Branch 2 (Top-Bot) */
-.pos-b-2 { left: 65%; top: 37.5%; }
-.label-b-2 { left: 85%; top: 37.5%; text-align: left; transform: translateY(-50%); }
-
-/* Branch 3 (Bot-Top) */
-.pos-b-3 { left: 65%; top: 62.5%; }
-.label-b-3 { left: 85%; top: 62.5%; text-align: left; transform: translateY(-50%); }
-
-/* Branch 4 (Bot-Bot) */
-.pos-b-4 { left: 65%; top: 87.5%; }
-.label-b-4 { left: 85%; top: 87.5%; text-align: left; transform: translateY(-50%); }
-
-/* Mobile Adjustments */
 @media (max-width: 600px) {
     .tree-wrapper { height: 350px; }
-    .tree-input-zone input { width: 45px; font-size: 0.9em; }
     .tree-label { font-size: 0.85em; }
+    .tree-input-zone input { width: 40px; font-size: 0.9em; }
     
-    /* Shift Level 2 labels closer on small screens */
-    .label-b-1, .label-b-2, .label-b-3, .label-b-4 { left: 82%; }
+    /* Pull Level 2 labels in slightly to avoid cut-off */
+    .label-b-1, .label-b-2, .label-b-3, .label-b-4 { left: 78%; }
 }
