@@ -14,7 +14,8 @@ A discrete random variable is a variable that can only take on a countable numbe
 ### Topics in this workshop
 
 * <a href="{{ "/drv/01-define.html" | relative_url }}">Is a random variable a discrete random variable</a>
-* <a href="{{ "/drv/02-distributin.html" | relative_url }}">Distribution, mean, and variance of a discrete random variable</a>
+* <a href="{{ "/drv/02-distribution.html" | relative_url }}">Probability distribution</a>
+* <a href="{{ "/drv/03-meanvariance.html" | relative_url }}">Mean, and variance of a discrete random variable</a>
 
 
 <a href="{{ "/drv/01-define.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
