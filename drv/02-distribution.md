@@ -125,8 +125,8 @@ It is known that $P(Y = 0) = 2P(Y = 4)$
 {% endcapture %}
 
 {% include table_fill.html 
-   id="drvdistributionq1c" 
-   title="1c"
+   id="drvdistributionq2" 
+   title="2"
    question_text="Complete the table for the probability distribution of the discrete random variable Y."
    table_content=drvdistribution2
    answers="0.34 || 0.17"
