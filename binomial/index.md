@@ -3,12 +3,19 @@ layout: default
 title: Binomial Distribution
 ---
 
-<div class="gigacalculator" data-tool="/calculators/binomial-probability-calculator.php" data-width="450">
-  <div class="gigacalctitle">Binomial Distribution Calculator</div>
-  <div class="gigacalcfooter">
-    <a href="https://www.gigacalculator.com/calculators/binomial-probability-calculator.php">Binomial Distribution Calculator</a> by <a class="gigacalclink" href="https://www.gigacalculator.com/">GIGAcalculator.com</a>
-  </div>
-</div>
-<script defer src="https://cdn.gigacalculator.com/embed.min.js"></script>
+<div class="explanation" markdown="1">
 
-Georgiev G.Z., "Binomial Distribution Calculator", [online] Available at: https://www.gigacalculator.com/calculators/binomial-probability-calculator.php
+# Binomial Distribution
+
+A binomial distribution is a discrete probability distribution that models the number of successes in a fixed number of independent trials, where each trial has only two possible outcomes (success or failure) and a constant probability of success. 
+
+</div>
+
+### Topics in this workshop
+
+* <a href="{{ "/binomial/01-factorial.html" | relative_url }}">Factorials</a>
+* <a href="{{ "/binomial/02-combinations.html" | relative_url }}">The binomial coefficient</a>
+* <a href="{{ "/binomial/03-probability.html" | relative_url }}">The binomial distribution</a>
+
+<a href="{{ "/binomial/01-factorial.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
+
