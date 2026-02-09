@@ -71,3 +71,57 @@ Then subtract $\mu^2$:
 $$\sigma^2 = 6.05 - 2.25^2 = 0.9875$$
 
 </div>
+
+### Questions
+
+1. The “Pecs Bar & Gym” has a gambling machine available to members.  It costs £1 per play and involves 4 spinning pictures.  If there are 2, 3, or 4 matching pictures then the member wins some cash prize.  The prizes and the probability of those prizes are given below.
+
+| Matches | Prize, £ | Probability |
+|:----|:----|:----|
+| 0 | 0 | 0.7 |
+| 2 | 0.20 | 0.25 |
+| 3 | 5 | 0.048 |
+| 4 | 50 | 0.002 |
+
+{% include question_numerical.html
+id="drvmean1a"
+title="1a"
+question_text="What is the probability of winning a prize?  Give your answer as a decimal number between 0 and 1."
+correct_answer="0.3"
+tolerance="0"
+solution_text="All but 0 matches win a prize so $P( \text{win})=1-0.7$"
+%}
+
+{% include question_numerical.html
+id="drvmean1b"
+title="1b"
+question_text="What is mean prize payout per play in £?  Give your answer correct to 2 decimal places."
+correct_answer="0.39"
+tolerance="0.005"
+solution_text="$\mu = 0 \times 0.7 + 0.2 \times 0.25 + 5 \times 0.048 + 50 \times 0.002$"
+%}
+
+{% include question_numerical.html
+id="drvmean1c"
+title="1c"
+question_text="What is mean profit to the company per play in £"
+correct_answer="0.61"
+tolerance="0.005"
+solution_text="Revenue from each play is £1, mean payout per play is £0.39, so $\pi = 1 - 0.39$"
+%}
+
+{% include question_numerical.html
+id="drvmean1d"
+title="1d"
+question_text="What is variance in the prize payout per play, giving your answer correct to 2 d.p."
+correct_answer="6.06"
+tolerance="0.005"
+solution_text="$E(X^2)=0^2 \times 0.7 + 0.2^2 \times 0.25 + 5^2 \times 0.048 + 50^2 \times 0.002 = 6.21$ <br>
+$Var (X)=6.21 - 0.39^2=6.0579$"
+%}
+
+<div style="text-align: center; margin-top: 3em;">
+    <a href="{{ "/drv/" | relative_url }}">← Return to Discrete Random Variables Menu</a>
+</div>
+
+{% include pagination.html %}
