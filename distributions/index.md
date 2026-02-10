@@ -22,5 +22,13 @@ The **normal distribution** is the most widely applied theoretical model in stat
 * Normal distribution 68/95/99 percent rule
 * Chebyshev's rule
 
+### PDF for printing purposes
+
+Please be mindful of the environment and ensure that you need to print this.
+
+<a href="{{ "/assets/pdf/distributions.pdf" | relative_url }}" target="_blank">Link to questions</a>
+
+<a href="{{ "/assets/pdf/distributions_solutions.pdf" | relative_url }}" target="_blank">Link to solutions</a>
+
 
 <a href="{{ "/distributions/01-frequency.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
