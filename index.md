@@ -11,7 +11,8 @@ Here you will find the workshops from the Learning Enhancement Team (LET) for yo
 They will provide you with the chance to practice questions on areas of statistics.
 </div>
 
-<div class="card-menu">
+<div class="card-menu" markdown="1">
+## Workshop 1 <br>
     
     <a href="{{ "/descriptive/" | relative_url }}" class="card">
         <div class="card-content">
