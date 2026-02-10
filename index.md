@@ -12,7 +12,6 @@ They will provide you with the chance to practice questions on areas of statisti
 </div>
 
 <div class="card-menu">
-    ## Workshop 1
     
     <a href="{{ "/descriptive/" | relative_url }}" class="card">
         <div class="card-content">
@@ -34,7 +33,6 @@ They will provide you with the chance to practice questions on areas of statisti
 </div>
 
 <div class="card-menu">
-    ## Workshop 2
     
     <a href="{{ "/probability/" | relative_url }}" class="card">
         <div class="card-content">
@@ -47,7 +45,6 @@ They will provide you with the chance to practice questions on areas of statisti
 </div>
 
 <div class="card-menu">
-    ## Workshop 3
 
     <a href="{{ "/drv/" | relative_url }}" class="card">
         <div class="card-content">
@@ -78,7 +75,6 @@ They will provide you with the chance to practice questions on areas of statisti
 </div>
 
 <div class="card-menu">
-    ## Workshop 4
 
     <a href="{{ "/confidence/" | relative_url }}" class="card">
         <div class="card-content">
@@ -91,7 +87,6 @@ They will provide you with the chance to practice questions on areas of statisti
 </div>
 
 <div class="card-menu">
-    ## Workshop 5
 
     <a href="{{ "/hypothesis/" | relative_url }}" class="card">
         <div class="card-content">
@@ -104,7 +99,6 @@ They will provide you with the chance to practice questions on areas of statisti
 </div>
 
 <div class="card-menu">
-    ## Workshop 6
 
     <a href="{{ "/t/" | relative_url }}" class="card">
         <div class="card-content">
