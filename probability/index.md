@@ -20,4 +20,12 @@ Probability shows the likelihood that an event happens, given as a fraction, dec
 * <a href="{{ "/probability/05-rules.html" | relative_url }}">Probability rules</a>
 
 
+### PDF for printing purposes
+
+Please be mindful of the environment and ensure that you need to print this.
+
+<a href="{{ "/assets/pdf/probability.pdf" | relative_url }}" target="_blank">Link to questions</a>
+
+<a href="{{ "/assets/pdf/probability_solutions.pdf" | relative_url }}" target="_blank">Link to solutions</a>
+
 <a href="{{ "/probability/01-one_event.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
