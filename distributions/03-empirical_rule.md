@@ -48,9 +48,9 @@ This information allows you to know that if a distribution is normally distribut
     id="Ndist2"
     title="Empirical Rule 2"
     question_text="Approximately what proportion of data lie above 1 standard deviations below the mean, given the data are normally distributed?"
-    options="a::17%||b::34%||c::68%||d::83%||e::Not possible to tell from this information"
+    options="a::17%||b::34%||c::68%||d::84%||e::Not possible to tell from this information"
     correct_answer="d"
-    solution_text="By symmetry 17% lie below 1 standard deviation below the mean, and the whole distribution sums to 100%"
+    solution_text="By symmetry 16% lie below 1 standard deviation below the mean, and the whole distribution sums to 100%"
 %}
 
 {% include question_numerical.html
