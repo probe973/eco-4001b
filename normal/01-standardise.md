@@ -51,7 +51,7 @@ title="2"
 question_text="Given $\mu = 120$, $\sigma = 5$, find the standardised score of a raw score of 92."
 correct_answer="-5.6"
 tolerance="0.05"
-solution_text="$z=\frac{92-120}{5}=2$"
+solution_text="$z=\frac{92-120}{5}=-5.6$"
 %}
 
 <div class="explanation" markdown="1">
