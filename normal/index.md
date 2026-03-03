@@ -14,7 +14,8 @@ The normal distribution is a common distribution for many continuous variables. 
 ### Topics in this workshop
 
 * <a href="{{ "/normal/01-standardise.html" | relative_url }}">Standardising values</a>
-* <a href="{{ "/drv/02-distribution.html" | relative_url }}">Normal distribution</a>
+* <a href="{{ "/normal/02-standard_normal.html" | relative_url }}">Stadard normal distribution</a>
+* <a href="{{ "/normal/03-normal_distribution.html" | relative_url }}">Normal distribution</a>
 
 
 <a href="{{ "/normal/01-standardise.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
