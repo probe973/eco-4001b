@@ -15,7 +15,7 @@
             <button class="btn" onclick="checkNumericalAnswer('{{ include.id }}', '{{ include.correct_answer }}', '{{ include.tolerance | default: 0 }}')">Check Answer</button>
             
             {% if include.solution_text %}
-                <button class="btn btn-primary solution-toggle-button" onclick="toggleSolution('solution-{{ include.id }}', this)">Show Solution Hint</button>
+                <button class="btn btn-primary solution-toggle-button" onclick="toggleSolution('solution-{{ include.id }}', this)">Show Solution</button>
             {% endif %}
         </div>
 
