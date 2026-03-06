@@ -73,7 +73,7 @@ Variance: $\sigma^2 = 5 \times 0.7 \times 0.3 = 1.05$
 
 ### Questions
 
-1. The “Pecs Bar & Gym” knows, from experience, that the probability that its rather old coffee vending machine works correctly with a purchase is 0.8. A customer is about to order 6 drinks.
+The “Pecs Bar & Gym” knows, from experience, that the probability that its rather old coffee vending machine works correctly with a purchase is 0.8. A customer is about to order 6 drinks.
 
 {% include question_numerical.html
 id="binomial1a"
@@ -111,7 +111,7 @@ tolerance="0.0005"
 solution_text="More than 1 failed means 2, 3, 4, 5, or 6 fails.  This represents 4, 3, 2, 1, or 0 successes, so looking for 4 or less successes, $P(D \leq 4) = 1-P(D>4)=1-(P(D=5)+P(D=6))$"
 %}
 
-2. For the discrete random variable X, such that $X \sim B(10, 0.25)$, calculate:
+For the discrete random variable X, such that $X \sim B(10, 0.25)$, calculate:
 
 {% include question_numerical.html
 id="binomial2a"
@@ -150,14 +150,14 @@ solution_text="This means greater than 2.5, so greater than or equal to 3.  Use 
 %}
 
 
-3. A game is played by rolling five, four-sided dice (all labelled 1, 2, 3, 4).  You *win* if you roll 4 or more 4's.
+A game is played by rolling five, four-sided dice (all labelled 1, 2, 3, 4).  You *win* if you roll 4 or more 4's.
 
 {% include question_numerical.html
 id="binomial3"
 title="3"
 question_text="If a gamer plays the game 10 times, what is the probability that they will *win* exactly 2 times?"
-correct_answer="0.474"
-tolerance="0"
+correct_answer="0.009657"
+tolerance="0.00005"
 solution_text="The probability of winning the game is based on the distribution G ~ B(5, 0.25) <br>
 5 trials each with a probability of 0.25 <br>
 $P(G \geq 4) = P(G=4) + P(G=5) = {5 \choose 4} \times 0.25^4 \times 0.75^1 + 0.25^5 = 0.0156$ <br><br>
