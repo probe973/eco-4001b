@@ -131,7 +131,11 @@ It is known that $P(Y = 0) = 2P(Y = 4)$
    table_content=drvdistribution2
    answers="0.34 || 0.17"
    tolerance="0.001" 
-   solution_text="The total probability must sum to 1.  Set probability of Y equals 4 as p, then probability of Y equals 0 is 2p"
+   solution_text="The total probability must sum to 1.  Set probability of Y equals 4 as p, then probability of Y equals 0 is 2p <br>
+   $2p + 0.12 + 0.22 + 0.15 + p = 1$ <br>
+    $3p = 0.51$ <br>
+  $p = 0.17$ <br>
+  $2p = 0.34$"
 %}
 
 <div style="text-align: center; margin-top: 3em;">
