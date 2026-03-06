@@ -149,6 +149,23 @@ tolerance="0"
 solution_text="This means greater than 2.5, so greater than or equal to 3.  Use online calculator or work out $P(X \geq 3) = 1 - P(X \lt 3) = 1-(P(X = 0)+P(X = 1)+P(X = 2))$"
 %}
 
+
+3. A game is played by rolling five, four-sided dice (all labelled 1, 2, 3, 4).  You *win* if you roll 4 or more 4's.
+
+{% include question_numerical.html
+id="binomial3"
+title="3"
+question_text="If a gamer plays the game 10 times, what is the probability that they will *win* exactly 2 times?"
+correct_answer="0.474"
+tolerance="0"
+solution_text="The probability of winning the game is based on the distribution G ~ B(5, 0.25) <br>
+5 trials each with a probability of 0.25 <br>
+$P(G \geq 4) = P(G=4) + P(G=5) = {5 \choose 4} \times 0.25^4 \times 0.75^1 + 0.25^5 = 0.0156$ <br><br>
+We now have 10 trials with a probability of winning of 0.0156, so X ~ B(10, 0.0156) <br>
+$P(X=2)={10 \choose 2} \times 0.0156^2 \times 0.9844^8 = 0.009657$"
+%}
+
+
 <div style="text-align: center; margin-top: 3em;">
     <a href="{{ "/binomial/" | relative_url }}">← Return to the Binomial Distribution Menu</a>
 </div>
