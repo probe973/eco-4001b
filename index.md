@@ -67,6 +67,11 @@ They will provide you with the chance to practice questions on areas of statisti
         </div>
     </a>
 
+</div>
+
+## Workshop 4
+<div class="card-menu">
+    
     <a href="{{ "/normal/" | relative_url }}" class="card">
         <div class="card-content">
             <div class="card-text">
@@ -75,10 +80,6 @@ They will provide you with the chance to practice questions on areas of statisti
             </div>
         </div>
     </a>
-</div>
-
-## Workshop 4
-<div class="card-menu">
 
     <a href="{{ "/confidence/" | relative_url }}" class="card">
         <div class="card-content">
