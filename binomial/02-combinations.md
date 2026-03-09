@@ -81,6 +81,14 @@ tolerance="0"
 solution_text="$ 20 \choose 7$"
 %}
 
+{% include question_dropdown.html
+    id="bincoef3"
+    title="3"
+    question_text="Show algebraically that $${n \choose x}={n \choose n-x}$$"
+    solution_text="${n \choose x} = \frac{n!}{x!(n-x)!}$ <br> ${n \choose n-x} = \frac{n!}{(n-x)!(n-(n-x))!}=\frac{n!}{(n-x)!x!}=\frac{n!}{x!(n-x)!}={n \choose x}$"
+%}
+
+
 <div style="text-align: center; margin-top: 3em;">
     <a href="{{ "/binomial/" | relative_url }}">← Return to the Binomial Distribution Menu</a>
 </div>
