@@ -17,5 +17,14 @@ A binomial distribution is a discrete probability distribution that models the n
 * <a href="{{ "/binomial/02-combinations.html" | relative_url }}">The binomial coefficient</a>
 * <a href="{{ "/binomial/03-probability.html" | relative_url }}">The binomial distribution</a>
 
+### PDF for printing purposes
+
+Please be mindful of the environment and ensure that you need to print this.
+
+<a href="{{ "/assets/pdf/binomial.pdf" | relative_url }}" target="_blank">Link to questions</a>
+
+<a href="{{ "/assets/pdf/binomail_solutions.pdf" | relative_url }}" target="_blank">Link to solutions</a>
+
+
 <a href="{{ "/binomial/01-factorial.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
 
