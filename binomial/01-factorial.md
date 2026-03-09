@@ -35,12 +35,21 @@ solution_text="Use the factorial button on your calculator or calculate $9 \time
 %}
 
 {% include question_numerical.html
-id="factorial2"
-title="2"
+id="factorial2a"
+title="2a"
 question_text="A musical artist has created an album of 12 songs.  How many different ways can the songs be ordered on the album?"
 correct_answer="479001600"
 tolerance="0"
 solution_text="Use the factorial button on your calculator (12!) or calculate $12 \times 11 \times 10 \times .... \times 2 \times 1$"
+%}
+
+{% include question_numerical.html
+id="factorial2b"
+title="2b"
+question_text="If the artist listens to the first 10 seconds of every song, for every possible combination, continuously, how many years would it take to listen through? For the purpose of this question ignore leap years and assume every year is 365 days."
+correct_answer="1823"
+tolerance="1"
+solution_text="Every combination takes $12 \times 10 = 120 \text{ s} = 2 \text{ min}$ <br> $479001600 \times 2 = 958003200 \text{ min}= \frac{958003200}{60 \times 24 \times 365} = 1823 \text{ yr}$"
 %}
 
 <div style="text-align: center; margin-top: 3em;">
