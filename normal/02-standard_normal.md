@@ -51,7 +51,7 @@ We can use the fact that the total probability is 1, and so $P(Z > 1.25) = 1 - 0
 
 Due to the symettry of the normal distribution we can also deduce that $P(Z > -1.25) = 0.8944$ and $P(Z < -1.25)=0.1056$.
 
-Tables are produced to be able to find probabilities for the standard normal distribution.  One such table is <a href="https://math.arizona.edu/~rsims/ma464/standardnormaltable.pdf">linked here</a>.
+Tables are produced to be able to find probabilities for the standard normal distribution.  One such table is <a href="https://math.arizona.edu/~rsims/ma464/standardnormaltable.pdf" target="_blank">linked here</a>.
 
 **From the linked table, see if you can confirm that $P(Z<1.25)=0.8944$.**
 
