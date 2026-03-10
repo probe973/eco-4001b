@@ -83,3 +83,9 @@ correct_answer="52.5"
 tolerance="0.05"
 solution_text="$x=60 + -3 \times 2.5 = 60 - 7.5 = 52.5$"
 %}
+
+<div style="text-align: center; margin-top: 3em;">
+    <a href="{{ "/normal/" | relative_url }}">← Return to Normal Distribution Menu</a>
+</div>
+
+{% include pagination.html %}
