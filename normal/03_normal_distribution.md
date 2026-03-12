@@ -256,6 +256,41 @@ Test your understanding with some new scenarios.
     solution_text="Standardise the boundaries. <br> $$z = \frac{51 - 50}{0.5} = 2$$ $$z = \frac{49 - 50}{0.5} = -2$$ <br> Probability accepted: $$P(-2 < Z < 2) = 0.9772 - 0.0228 = 0.9544$$ <br> Probability rejected: $$1 - 0.9544 = 0.0456$$"
 %}
 
+### Question 13
+
+From experience, it is known that the length of time customers spend on the running machine is normally distributed with a mean of 28 minutes and a standard deviation of 10 minutes.  They ask for volunteers to showcase the gym, but decide they will only take people who spend more than 40 minutes on the running machine.
+
+{% include question_numerical.html
+    id="normal_13a"
+    title="13 a"
+    question_text="Given that a member spends more than 40 minutes on the running machine, what is the probability that they spend more than 50 minutes on the running machine?  Give answer correct to 3 d.p."
+    correct_answer="0.122"
+    tolerance="0.001"
+    solution_text="$X =$ time on running machine <br>
+    $X \sim N(28, 10^2)$ <br>
+    $P(X > 40) = P(Z > 1.2) = 0.115$ <br>
+    $P(X > 40 \text{ AND } X > 50) = P(X > 50) = P(Z > 2.2) = 0.014$ <br>
+    $P(X > 50 | X > 40) = \frac{0.014}{0.115} = 0.122$
+"
+%}
+
+{% include question_numerical.html
+    id="normal_13b"
+    title="13 b"
+    question_text="If 6 people volunteer to showcase the gym, what is the probability that less than half of them will be taken up on their offer?  Give answer correct to 3 d.p."
+    correct_answer="0.977"
+    tolerance="0.003"
+    solution_text="Probability of being selected = $P(X>40)=0.115$
+    $S = $ number of people selected <br>
+    $S \sim B(6, 0.115)$ <br>
+    $P(S < 3) = P(S = 0) + P(S = 1) + P(S = 2)$ <br>
+    $P(S = 0) = {6 \choose 0} \times 0.115^0 \times (1 - 0.115)^6 = 0.480$ <br>
+    $P(S = 1) = {6 \choose 1} \times 0.115^1 \times (1 - 0.115)^5 = 0.375$ <br>
+    $P(S = 2) = {6 \choose 2} \times 0.115^2 \times (1 - 0.115)^4 = 0.122$ <br>
+    $P(S < 3) = 0.977$
+"
+%}
+
 <div style="text-align: center; margin-top: 3em;">
     <a href="{{ "/normal/" | relative_url }}">← Return to Normal Distribution Menu</a>
 </div>
