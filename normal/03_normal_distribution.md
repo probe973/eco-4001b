@@ -52,7 +52,7 @@ If you have an online calculator or a graphical calculator, you do not always ne
 Instead of calculating the $z$-score by hand, we can use a calculator. 
 1. Enter the mean $\mu = 175$.
 2. Enter the standard deviation $\sigma = 10$.
-3. Select the probability boundary (Greater than, $X > x$) and enter $165$.
+3. Enter $165$ as the raw score
 
 <div class="gigacalculator" data-tool="/calculators/normal-distribution-calculator.php" data-width="450">
   <div class="gigacalctitle">Normal Distribution Calculator</div>
@@ -86,8 +86,8 @@ $$P(a < X < b) = P(X < b) - P(X < a)$$
 
 **Using the Calculator:**
 Because the embedded calculator above provides basic "Less than" or "Greater than" options, you perform the exact same subtraction:
-1. Select "Less than", enter 190, and hit Calculate to get **0.93319**.
-2. Keep it on "Less than", enter 165, and hit Calculate to get **0.15865**.
+1. Enter 190 as the raw score, and hit Calculate to get **0.93319** for less than.
+2. Enter 165, and hit Calculate to get **0.15865** for less than.
 3. Subtract the two values yourself: $0.93319 - 0.15865 = 0.77454$.
 
 So, $P(165 < X < 190) = 0.7745$.
@@ -174,12 +174,14 @@ If $P(C > c) = 0.10$, then the area to the *left* is $0.90$. So, $P(C < c) = 0.9
 ### Method 2: Using an Inverse Normal Calculator
 
 Most graphical calculators and online statistics tools have an **Inverse Normal** function. 
-
-Instead of inputting the boundary to find the area, you input the **Area** (probability) to find the boundary. 
+ 
 1. Select "Z from Probability" (or the equivalent option).
-2. Enter the Area (e.g., $0.90$ for the area to the left).
-3. Enter the mean $\mu = 45$ and standard deviation $\sigma = 8$.
-4. The calculator will directly output $55.25$ minutes.
+2. Enter the Probability (e.g., $0.90$ for the area to the left).
+3. The calculator will directly output the z-score.
+4. We now rearrange the standardising formula $z = \frac{x - \mu}{\sigma}$ to solve for $x$:
+   $$x = \mu + z\sigma$$
+5. Substitute our values in:
+   $$c = 45 + (1.28 \times 8) = 45 + 10.24 = 55.24 \text{ minutes}$$
 
 </div>
 
