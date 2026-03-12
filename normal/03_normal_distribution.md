@@ -106,7 +106,7 @@ This means $X \sim N(120, 15^2)$.
     question_text="If you wanted to standardise an apple weighing 145g to use a standard normal table, which calculation gives the correct $z$-score?"
     options="wrong1::(145 - 15) / 120||correct::(145 - 120) / 15||wrong2::(120 - 145) / 15||wrong3::(145 - 120) / 15^2"
     correct_answer="correct"
-    solution_text="The formula is z = (x - mean) / standard deviation."
+    solution_text="The standardising formula is $$z = \frac{x - \mu}{\sigma}$$ where \(x\) is the value, \(\mu\) is the mean, and \(\sigma\) is the standard deviation."
 %}
 
 {% include question_multiple_choice.html
@@ -115,10 +115,8 @@ This means $X \sim N(120, 15^2)$.
     question_text="Without doing any complex calculations, what is $P(X < 120)$?"
     options="wrong1::1||wrong2::0||correct::0.5||wrong3::0.95"
     correct_answer="correct"
-    solution_text="Because the normal distribution is perfectly symmetrical, exactly half (0.5) of the values fall below the mean (120)."
+    solution_text="The normal distribution is symmetric about the mean. Therefore $$P(X < \mu) = 0.5$$ Since the mean is \(120\), exactly half the distribution lies below 120."
 %}
-
-For the following numerical questions, use either the tables or the calculator. Give your answers to 4 decimal places:
 
 {% include question_numerical.html
     id="norm_num_1"
@@ -126,7 +124,7 @@ For the following numerical questions, use either the tables or the calculator. 
     question_text="What is the probability that a randomly chosen apple weighs less than 132g? i.e. Find $P(X < 132)$"
     correct_answer="0.7881"
     tolerance="0.0005"
-    solution_text="Standardise: z = (132 - 120)/15 = 0.8. Look up 0.8 in tables or use calculator with mean=120, SD=15."
+    solution_text="Standardise the value. $$z = \frac{132 - 120}{15}$$ $$z = \frac{12}{15} = 0.8$$ Then find $$P(Z < 0.8)$$ using tables or a calculator."
 %}
 
 {% include question_numerical.html
@@ -135,7 +133,7 @@ For the following numerical questions, use either the tables or the calculator. 
     question_text="What is the probability that a randomly chosen apple weighs more than 100g? i.e. Find $P(X > 100)$"
     correct_answer="0.9082"
     tolerance="0.0005"
-    solution_text="Standardise: z = (100 - 120)/15 = -1.333. P(Z > -1.33) = P(Z < 1.33) = 0.9082. Or use calculator directly."
+    solution_text="First standardise. $$z = \frac{100 - 120}{15}$$ $$z = \frac{-20}{15} \approx -1.33$$ Using symmetry of the normal distribution: $$P(Z > -1.33) = P(Z < 1.33)$$ From tables this is approximately \(0.9082\)."
 %}
 
 {% include question_numerical.html
@@ -144,8 +142,9 @@ For the following numerical questions, use either the tables or the calculator. 
     question_text="What is the probability that a randomly chosen apple weighs between 105g and 135g? i.e. Find $P(105 < X < 135)$"
     correct_answer="0.6827"
     tolerance="0.005"
-    solution_text="Standardise both bounds: z1 = (105-120)/15 = -1.0 and z2 = (135-120)/15 = 1.0. Calculate P(Z < 1) - P(Z < -1) = 0.8413 - 0.1587 = 0.6826. (Or find the two 'Less than' values on the calculator and subtract)."
+    solution_text="Standardise both bounds. $$z_1 = \frac{105 - 120}{15} = -1$$ $$z_2 = \frac{135 - 120}{15} = 1$$ Then compute $$P(Z < 1) - P(Z < -1)$$ $$0.8413 - 0.1587 = 0.6826$$"
 %}
+
 
 
 <div class="explanation" markdown="1">
@@ -194,7 +193,7 @@ Test your inverse normal skills using both our apple distribution ($X \sim N(120
     question_text="The farm wants to package the heaviest 5% of their apples as 'Jumbo' sized. Recall that $X \sim N(120, 15^2)$. What is the minimum weight required for an apple to be classified as Jumbo? (Give your answer in grams to 2 decimal places)."
     correct_answer="144.67"
     tolerance="0.1"
-    solution_text="We need to find x such that P(X > x) = 0.05 (or P(X < x) = 0.95). Looking up 0.95 in the main body of the tables gives a z-score of approximately 1.645. Substitute into the rearranged formula: x = 120 + (1.645 * 15) = 144.675g."
+    solution_text="We want $$P(X > x) = 0.05$$ so $$P(X < x) = 0.95$$ From standard normal tables the corresponding value is $$z \approx 1.645$$ Convert back using $$x = \mu + z\sigma$$ $$x = 120 + (1.645 \times 15) = 144.675$$ So the minimum Jumbo weight is approximately \(144.67\) g."
 %}
 
 {% include question_numerical.html
@@ -203,7 +202,7 @@ Test your inverse normal skills using both our apple distribution ($X \sim N(120
     question_text="The worker gets a warning if they are in the top 2% of longest commute times. What is the cut-off time for getting a warning? $C \sim N(45, 8^2)$. (Give your answer to 2 decimal places)."
     correct_answer="61.43"
     tolerance="0.1"
-    solution_text="Find c such that P(C > c) = 0.02, meaning P(C < c) = 0.98. The corresponding z-score is roughly 2.054. c = 45 + (2.054 * 8) = 61.43 minutes."
+    solution_text="We want $$P(C > c) = 0.02$$ so $$P(C < c) = 0.98$$ The corresponding standard normal value is approximately $$z \approx 2.054$$ Convert back: $$c = \mu + z\sigma$$ $$c = 45 + (2.054 \times 8) = 61.43$$ minutes."
 %}
 
 {% include question_multiple_choice.html
@@ -212,7 +211,7 @@ Test your inverse normal skills using both our apple distribution ($X \sim N(120
     question_text="A farmer harvests a batch of 2000 apples. Based on the normal distribution $X \sim N(120, 15^2)$, approximately how many of these apples are expected to weigh more than 150g?"
     options="wrong1::150||wrong2::100||correct::46||wrong3::5"
     correct_answer="correct"
-    solution_text="First find P(X > 150). Standardise: z = (150 - 120) / 15 = 2.0. P(Z > 2.0) = 1 - 0.9772 = 0.0228. Multiply the probability by the total number of apples: 0.0228 * 2000 = 45.6, which rounds to 46."
+    solution_text="Standardise the value. $$z = \frac{150 - 120}{15} = 2$$ From tables $$P(Z < 2) = 0.9772$$ so $$P(Z > 2) = 1 - 0.9772 = 0.0228$$ Expected apples: $$0.0228 \times 2000 = 45.6$$ which rounds to **46**."
 %}
 
 ### Mixed Practice
@@ -225,7 +224,7 @@ Test your complete understanding with some brand new scenarios.
     question_text="A machine fills plastic bottles with water. The volume of water in each bottle, $V$, is normally distributed with a mean of 505 ml and a standard deviation of 2 ml. What is the probability that a randomly selected bottle contains less than the advertised 500 ml? (Give your answer to 4 decimal places)."
     correct_answer="0.0062"
     tolerance="0.0005"
-    solution_text="The distribution is V ~ N(505, 2^2). Standardise: z = (500 - 505) / 2 = -2.5. Looking up P(Z < -2.5) in the tables or using a calculator gives 0.0062."
+    solution_text="The distribution is $$V \sim N(505,2^2)$$ Standardise: $$z = \frac{500 - 505}{2} = -2.5$$ Then $$P(Z < -2.5) \approx 0.0062$$"
 %}
 
 {% include question_numerical.html
@@ -234,7 +233,7 @@ Test your complete understanding with some brand new scenarios.
     question_text="IQ scores in a population are modelled by a normal distribution with a mean of 100 and a standard deviation of 15. To be invited to join a high-IQ society, a person must score in the top 2% of the population. What is the minimum IQ score required? (Give your answer to 1 decimal place)."
     correct_answer="130.8"
     tolerance="0.2"
-    solution_text="This is an inverse normal question. We need x such that P(I > x) = 0.02, which means the area to the left is 0.98. The corresponding z-score is approximately 2.054. Rearranging the formula gives x = 100 + (2.054 * 15) = 130.81."
+    solution_text="We want $$P(I > x) = 0.02$$ so $$P(I < x) = 0.98$$ From tables $$z \approx 2.054$$ Convert back: $$x = 100 + (2.054 \times 15) = 130.81$$ So the required IQ is approximately \(130.8\)."
 %}
 
 {% include question_numerical.html
@@ -243,7 +242,7 @@ Test your complete understanding with some brand new scenarios.
     question_text="The battery life of a particular smartphone model on a single charge is normally distributed with a mean of 24 hours and a standard deviation of 2.5 hours. What is the probability that a fully charged phone lasts between 20 and 26 hours? (Give your answer to 4 decimal places)."
     correct_answer="0.7333"
     tolerance="0.001"
-    solution_text="Find z-scores for both bounds. For 20 hours: z = (20 - 24) / 2.5 = -1.6. For 26 hours: z = (26 - 24) / 2.5 = 0.8. Calculate P(Z < 0.8) - P(Z < -1.6) = 0.7881 - 0.0548 = 0.7333. (Using the calculator, find 'Less than 26' and subtract 'Less than 20')."
+    solution_text="Standardise both bounds. $$z_1 = \frac{20 - 24}{2.5} = -1.6$$ $$z_2 = \frac{26 - 24}{2.5} = 0.8$$ Then compute $$P(Z < 0.8) - P(Z < -1.6)$$ $$0.7881 - 0.0548 = 0.7333$$"
 %}
 
 {% include question_multiple_choice.html
@@ -252,7 +251,7 @@ Test your complete understanding with some brand new scenarios.
     question_text="A factory produces metal bolts. The length of the bolts is normally distributed as $L \sim N(50, 0.5^2)$ mm. Quality control rejects any bolt that is longer than 51 mm or shorter than 49 mm. What is the probability that a randomly selected bolt is rejected?"
     options="wrong1::0.9544||correct::0.0456||wrong2::0.0228||wrong3::0.0500"
     correct_answer="correct"
-    solution_text="First standardise the boundaries: z = (51 - 50) / 0.5 = 2.0 and z = (49 - 50) / 0.5 = -2.0. The probability of being accepted (between -2 and 2) is 0.9772 - 0.0228 = 0.9544. The probability of being rejected is the outside tails: 1 - 0.9544 = 0.0456."
+    solution_text="Standardise the boundaries. $$z = \frac{51 - 50}{0.5} = 2$$ $$z = \frac{49 - 50}{0.5} = -2$$ Probability accepted: $$P(-2 < Z < 2) = 0.9772 - 0.0228 = 0.9544$$ Probability rejected: $$1 - 0.9544 = 0.0456$$"
 %}
 
 <div style="text-align: center; margin-top: 3em;">
