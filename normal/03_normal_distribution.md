@@ -102,16 +102,16 @@ This means $X \sim N(120, 15^2)$.
 
 {% include question_multiple_choice.html
     id="norm_mc_1"
-    title="Question 1"
+    title="1"
     question_text="If you wanted to standardise an apple weighing 145g to use a standard normal table, which calculation gives the correct $z$-score?"
-    options="wrong1::(145 - 15) / 120||correct::(145 - 120) / 15||wrong2::(120 - 145) / 15||wrong3::(145 - 120) / 15^2"
+    options="wrong1::(145 - 15) / 120||correct::(145 - 120) / 15||wrong2::(120 - 145) / 15||wrong3::(145 - 120) / 225"
     correct_answer="correct"
     solution_text="The standardising formula is $$z = \frac{x - \mu}{\sigma}$$ where \(x\) is the value, \(\mu\) is the mean, and \(\sigma\) is the standard deviation."
 %}
 
 {% include question_multiple_choice.html
     id="norm_mc_2"
-    title="Question 2"
+    title="2"
     question_text="Without doing any complex calculations, what is $P(X < 120)$?"
     options="wrong1::1||wrong2::0||correct::0.5||wrong3::0.95"
     correct_answer="correct"
@@ -120,7 +120,7 @@ This means $X \sim N(120, 15^2)$.
 
 {% include question_numerical.html
     id="norm_num_1"
-    title="Question 3"
+    title="3"
     question_text="What is the probability that a randomly chosen apple weighs less than 132g? i.e. Find $P(X < 132)$"
     correct_answer="0.7881"
     tolerance="0.0005"
@@ -129,7 +129,7 @@ This means $X \sim N(120, 15^2)$.
 
 {% include question_numerical.html
     id="norm_num_2"
-    title="Question 4"
+    title="4"
     question_text="What is the probability that a randomly chosen apple weighs more than 100g? i.e. Find $P(X > 100)$"
     correct_answer="0.9082"
     tolerance="0.0005"
@@ -138,7 +138,7 @@ This means $X \sim N(120, 15^2)$.
 
 {% include question_numerical.html
     id="norm_num_3"
-    title="Question 5"
+    title="5"
     question_text="What is the probability that a randomly chosen apple weighs between 105g and 135g? i.e. Find $P(105 < X < 135)$"
     correct_answer="0.6827"
     tolerance="0.005"
@@ -191,7 +191,7 @@ Test your inverse normal skills using both our apple distribution ($X \sim N(120
 
 {% include question_numerical.html
     id="norm_num_4"
-    title="Question 6"
+    title="6"
     question_text="The farm wants to package the heaviest 5% of their apples as 'Jumbo' sized. Recall that $X \sim N(120, 15^2)$. What is the minimum weight required for an apple to be classified as Jumbo? (Give your answer in grams to 2 decimal places)."
     correct_answer="144.67"
     tolerance="0.1"
@@ -200,7 +200,7 @@ Test your inverse normal skills using both our apple distribution ($X \sim N(120
 
 {% include question_numerical.html
     id="norm_num_5"
-    title="Question 7"
+    title="7"
     question_text="The worker gets a warning if they are in the top 2% of longest commute times. What is the cut-off time for getting a warning? $C \sim N(45, 8^2)$. (Give your answer to 2 decimal places)."
     correct_answer="61.43"
     tolerance="0.1"
@@ -209,7 +209,7 @@ Test your inverse normal skills using both our apple distribution ($X \sim N(120
 
 {% include question_multiple_choice.html
     id="norm_mc_3"
-    title="Question 8"
+    title="8"
     question_text="A farmer harvests a batch of 2000 apples. Based on the normal distribution $X \sim N(120, 15^2)$, approximately how many of these apples are expected to weigh more than 150g?"
     options="wrong1::150||wrong2::100||correct::46||wrong3::5"
     correct_answer="correct"
@@ -218,11 +218,11 @@ Test your inverse normal skills using both our apple distribution ($X \sim N(120
 
 ### Mixed Practice
 
-Test your complete understanding with some brand new scenarios.
+Test your understanding with some new scenarios.
 
 {% include question_numerical.html
     id="mixed_new_1"
-    title="Question 9"
+    title="9"
     question_text="A machine fills plastic bottles with water. The volume of water in each bottle, $V$, is normally distributed with a mean of 505 ml and a standard deviation of 2 ml. What is the probability that a randomly selected bottle contains less than the advertised 500 ml? (Give your answer to 4 decimal places)."
     correct_answer="0.0062"
     tolerance="0.0005"
@@ -231,7 +231,7 @@ Test your complete understanding with some brand new scenarios.
 
 {% include question_numerical.html
     id="mixed_new_2"
-    title="Question 10"
+    title="10"
     question_text="IQ scores in a population are modelled by a normal distribution with a mean of 100 and a standard deviation of 15. To be invited to join a high-IQ society, a person must score in the top 2% of the population. What is the minimum IQ score required? (Give your answer to 1 decimal place)."
     correct_answer="130.8"
     tolerance="0.2"
@@ -240,7 +240,7 @@ Test your complete understanding with some brand new scenarios.
 
 {% include question_numerical.html
     id="mixed_new_3"
-    title="Question 11"
+    title="11"
     question_text="The battery life of a particular smartphone model on a single charge is normally distributed with a mean of 24 hours and a standard deviation of 2.5 hours. What is the probability that a fully charged phone lasts between 20 and 26 hours? (Give your answer to 4 decimal places)."
     correct_answer="0.7333"
     tolerance="0.001"
@@ -249,7 +249,7 @@ Test your complete understanding with some brand new scenarios.
 
 {% include question_multiple_choice.html
     id="mixed_new_4"
-    title="Question 12"
+    title="12"
     question_text="A factory produces metal bolts. The length of the bolts is normally distributed as $L \sim N(50, 0.5^2)$ mm. Quality control rejects any bolt that is longer than 51 mm or shorter than 49 mm. What is the probability that a randomly selected bolt is rejected?"
     options="wrong1::0.9544||correct::0.0456||wrong2::0.0228||wrong3::0.0500"
     correct_answer="correct"
