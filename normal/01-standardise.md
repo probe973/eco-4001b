@@ -64,7 +64,7 @@ $$x=\mu + z \sigma$$
 
 </div>
 
-For each of the situtations below, enter the raw score, $x$.
+For each of the situations below, enter the raw score, $x$.
 
 {% include question_numerical.html
 id="normstand_3"
