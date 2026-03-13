@@ -96,7 +96,7 @@ Use the table of probabilities to find the $z$ value, or use the *Z from Probabi
 {% include question_numerical.html
 id="standnorm3"
 title="3"
-question_text="What is $P(Z>z)=0.9826$"
+question_text="$z$ if $P(Z>z)=0.9826$"
 correct_answer="-2.11"
 tolerance="0.005"
 solution_text="Use tables or calculator (one-tailed)"
@@ -105,7 +105,7 @@ solution_text="Use tables or calculator (one-tailed)"
 {% include question_numerical.html
 id="standnorm4"
 title="4"
-question_text="What is $P(Z<z)=0.6331$"
+question_text="$z$ if $P(Z<z)=0.6331$"
 correct_answer="0.33"
 tolerance="0.005"
 solution_text="Use tables or calculator (one-tailed)"
