@@ -125,3 +125,16 @@ They will provide you with the chance to practice questions on areas of statisti
         </div>
     </a>
 </div>
+
+### PDF's for printing
+<div class="card-menu">
+
+    <a href="{{ "/pdf/" | relative_url }}" class="card">
+        <div class="card-content">
+            <div class="card-text">
+                <h3>PDF questions and solutions</h3>
+                <p>For printing or viewing</p>
+            </div>
+        </div>
+    </a>
+</div>
