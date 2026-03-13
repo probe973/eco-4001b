@@ -140,7 +140,7 @@ This means $X \sim N(120, 15^2)$.
     id="norm_num_3"
     title="5"
     question_text="What is the probability that a randomly chosen apple weighs between 105g and 135g? i.e. Find $P(105 < X < 135)$"
-    correct_answer="0.6827"
+    correct_answer="0.6826"
     tolerance="0.005"
     solution_text="Standardise both bounds. $$z_1 = \frac{105 - 120}{15} = -1$$ $$z_2 = \frac{135 - 120}{15} = 1$$ <br> Then compute $$P(Z < 1) - P(Z < -1)$$ $$0.8413 - 0.1587 = 0.6826$$"
 %}
@@ -187,7 +187,7 @@ Most graphical calculators and online statistics tools have an **Inverse Normal*
 
 ### Questions
 
-Test your inverse normal skills using both our apple distribution ($X \sim N(120, 15^2)$) and our commute distribution ($C \sim N(45, 8^2)$).
+Test your inverse normal skills using both the apple distribution ($X \sim N(120, 15^2)$) and the commute distribution ($C \sim N(45, 8^2)$).
 
 {% include question_numerical.html
     id="norm_num_4"
@@ -198,23 +198,25 @@ Test your inverse normal skills using both our apple distribution ($X \sim N(120
     solution_text="We want $$P(X > x) = 0.05$$ so $$P(X < x) = 0.95$$ <br> From standard normal tables the corresponding value is $$z \approx 1.645$$ <br> Convert back using $$x = \mu + z\sigma$$ $$x = 120 + (1.645 \times 15) = 144.675$$ <br> So the minimum Jumbo weight is approximately \(144.67\) g."
 %}
 
+{% include question_multiple_choice.html
+    id="norm_mc_3"
+    title="7"
+    question_text="A farmer harvests a batch of 2000 apples. Based on the normal distribution $X \sim N(120, 15^2)$, approximately how many of these apples are expected to weigh more than 150g?"
+    options="wrong1::150||wrong2::100||correct::46||wrong3::5"
+    correct_answer="correct"
+    solution_text="Standardise the value. <br> $$z = \frac{150 - 120}{15} = 2$$ <br> From tables $$P(Z < 2) = 0.9772$$ so $$P(Z > 2) = 1 - 0.9772 = 0.0228$$ <br> Expected apples: $$0.0228 \times 2000 = 45.6$$ which rounds to **46**."
+%}
+
 {% include question_numerical.html
     id="norm_num_5"
-    title="7"
+    title="8"
     question_text="The worker gets a warning if they are in the top 2% of longest commute times. What is the cut-off time for getting a warning? $C \sim N(45, 8^2)$. (Give your answer to 2 decimal places)."
     correct_answer="61.43"
     tolerance="0.1"
     solution_text="We want $$P(C > c) = 0.02$$ so $$P(C < c) = 0.98$$ <br> The corresponding standard normal value is approximately $$z \approx 2.054$$ <br> Convert back: $$c = \mu + z\sigma$$ $$c = 45 + (2.054 \times 8) = 61.43$$ minutes."
 %}
 
-{% include question_multiple_choice.html
-    id="norm_mc_3"
-    title="8"
-    question_text="A farmer harvests a batch of 2000 apples. Based on the normal distribution $X \sim N(120, 15^2)$, approximately how many of these apples are expected to weigh more than 150g?"
-    options="wrong1::150||wrong2::100||correct::46||wrong3::5"
-    correct_answer="correct"
-    solution_text="Standardise the value. <br> $$z = \frac{150 - 120}{15} = 2$$ <br> From tables $$P(Z < 2) = 0.9772$$ so $$P(Z > 2) = 1 - 0.9772 = 0.0228$$ <br> Expected apples: $$0.0228 \times 2000 = 45.6$$ which rounds to **46**."
-%}
+
 
 ### Mixed Practice
 
@@ -258,7 +260,7 @@ Test your understanding with some new scenarios.
 
 ### Question 13
 
-From experience, it is known that the length of time customers spend on the running machine is normally distributed with a mean of 28 minutes and a standard deviation of 10 minutes.  They ask for volunteers to showcase the gym, but decide they will only take people who spend more than 40 minutes on the running machine.
+From experience, it is known that the length of time customers spend on the running machine is normally distributed with a mean of 28 minutes and a standard deviation of 10 minutes.  A gym ask for volunteers to showcase the gym, but decide they will only take people who spend more than 40 minutes on the running machine.
 
 {% include question_numerical.html
     id="normal_13a"
@@ -280,7 +282,7 @@ From experience, it is known that the length of time customers spend on the runn
     question_text="If 6 people volunteer to showcase the gym, what is the probability that less than half of them will be taken up on their offer?  Give answer correct to 3 d.p."
     correct_answer="0.977"
     tolerance="0.003"
-    solution_text="Probability of being selected = $P(X>40)=0.115$
+    solution_text="Probability of being selected = $P(X>40)=0.115$ <br>
     $S = $ number of people selected <br>
     $S \sim B(6, 0.115)$ <br>
     $P(S < 3) = P(S = 0) + P(S = 1) + P(S = 2)$ <br>
