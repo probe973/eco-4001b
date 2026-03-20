@@ -84,8 +84,8 @@ This can written as (44.67, 55.33)
 %}
 
 {% include question_numerical.html
-    id="ciT22"
-    title="2 2"
+    id="ciT2b"
+    title="2 b"
     question_text="What is the upper bound of the 90% confidence interval for the mean, correct to 2 d.p.?"
     correct_answer="107.78"
     tolerance="0.005"
