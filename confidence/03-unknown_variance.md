@@ -69,7 +69,7 @@ This can written as (44.67, 55.33)
     question_text="What would be the 95% confidence interval for the mean?"
     options="correct::(150.29, 161.71)||wrong2::(145.23, 167.77)||wrong3::(155.1, 156.9)||wrong1::(150.1, 165.9)"
     correct_answer="correct"
-    solution_text="$156 \pm 2.093 \frac{12.2}{\sqrt{20}}$"
+    solution_text="$156 \pm 2.093 \times \frac{12.2}{\sqrt{20}}$"
 %}
 
 2. From a sample of size 12, a sample mean of 100 and a sample standard deviation of 15 is found.
@@ -80,7 +80,7 @@ This can written as (44.67, 55.33)
     question_text="What is the lower bound of the 90% confidence interval for the mean, correct to 2 d.p.?"
     correct_answer="92.22"
     tolerance="0.005"
-    solution_text="Critical t value is 1.796, so lower bound will be $100 - 1.796 \times \frac{15}{\sqrt{12}}"
+    solution_text="Critical t value is 1.796, so lower bound will be $100 - 1.796 \times \frac{15}{\sqrt{12}}$"
 %}
 
 {% include question_numerical.html
@@ -89,7 +89,7 @@ This can written as (44.67, 55.33)
     question_text="What is the upper bound of the 90% confidence interval for the mean, correct to 2 d.p.?"
     correct_answer="107.78"
     tolerance="0.005"
-    solution_text="Critical t value is 1.796, so lower bound will be $100 + 1.796 \times \frac{15}{\sqrt{12}}"
+    solution_text="Critical t value is 1.796, so lower bound will be $100 + 1.796 \times \frac{15}{\sqrt{12}}$"
 %}
 
 <div style="text-align: center; margin-top: 3em;">
