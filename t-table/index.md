@@ -1,7 +1,6 @@
 ---
 layout: default
 title: One-Sided T-Distribution Critical Values
-permalink: /t-distribution-table/
 ---
 
 <h1 id="table-heading">One-Sided T-Distribution Critical Values</h1>
