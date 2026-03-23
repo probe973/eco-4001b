@@ -20,7 +20,7 @@ Confidence intervals give estimates of a true population parameter based on a le
 
 ### Critical t-values
 
-This <a href="/eco-4001b/assets/pdf/critical values of 1 tailed t.pdf" target="_blank">here</a> to get a the **one-tailed critical values t table**.  This can be used in confidence intervals and t-tests.
+This <a href="/eco-4001b/t-table/" target="_blank">here</a> to get a the **one-tailed critical values t table**.  This can be used in confidence intervals and t-tests.
 
 
 <a href="{{ "/confidence/01-point-interval.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
