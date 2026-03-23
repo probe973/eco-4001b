@@ -30,4 +30,3 @@ Please be mindful of the environment and ensure that you need to print this.
 
 <a href="{{ "/normal/01-standardise.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
 
-<a href="{{ "/normal/01-standardise.html" | relative_url }}" class="btn btn-primary">Start Workshop</a>
