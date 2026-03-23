@@ -39,7 +39,7 @@ For each of the situations below, enter the standardised score, $z$.
 {% include question_numerical.html
 id="normstand_1"
 title="1"
-question_text="Given $\mu = 40$, $\sigma = 12$, find the standardised score of a raw score of 54."
+question_text="Given $\mu = 40$, $\sigma = 12$, find the standardised score of a raw score of 64."
 correct_answer="2"
 tolerance="0"
 solution_text="$z=\frac{54-40}{12}=2$"
