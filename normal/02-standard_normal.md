@@ -79,7 +79,7 @@ title="1"
 question_text="What is $P(Z<1.1)$"
 correct_answer="0.8643"
 tolerance="0.0005"
-solution_text="Use tables or calculator"
+solution_text="Use tables or calculator to get 0.8643"
 %}
 
 {% include question_numerical.html
@@ -88,7 +88,7 @@ title="2"
 question_text="What is $P(Z>-0.82)$"
 correct_answer="0.7939"
 tolerance="0.0005"
-solution_text="Use tables or calculator"
+solution_text="Use tables or calculator to get 0.7939"
 %}
 
 Use the table of probabilities to find the $z$ value, or use the *Z from Probability* in the calculator to find $z$, such that:
@@ -99,7 +99,7 @@ title="3"
 question_text="$z$ if $P(Z>z)=0.9826$"
 correct_answer="-2.11"
 tolerance="0.005"
-solution_text="Use tables or calculator (one-tailed)"
+solution_text="Use tables or calculator (one-tailed) to get -2.11"
 %}
 
 {% include question_numerical.html
@@ -108,7 +108,7 @@ title="4"
 question_text="$z$ if $P(Z<z)=0.6331$"
 correct_answer="0.33"
 tolerance="0.005"
-solution_text="Use tables or calculator (one-tailed)"
+solution_text="Use tables or calculator (one-tailed) to get 0.33"
 %}
 
 
