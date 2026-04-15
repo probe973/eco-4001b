@@ -7,7 +7,7 @@ title: Confidence Intervals with Known Population Variance
     
 # Calculating a 95% confidence interval for the mean, with a known population standard deviation
 
-The margin of error in a confidence interval is determined by the level of confidence, the sample size, and the standard deviation in the sample.  When the population standard deviation is known you can use the formula, for a 95% confidence interval:
+The margin of error in a confidence interval is determined by the level of confidence, the sample size, and the standard deviation.  When the population standard deviation is known you can use the formula, for a 95% confidence interval:
 
 $$\bar{x} \pm 1.96 \times \frac{\sigma}{\sqrt{n}} $$
 
@@ -77,7 +77,7 @@ If the sample size is large, then this formula is a close approximation when usi
     question_text="Calculate the lower value of the 95% confidence interval if sample mean = 100, population standard deviation = 75, sample size = 225"
     correct_answer="90.2"
     tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100-9.8=90.2$"
+    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100-9.2=90.8$"
 %}
 
 {% include question_numerical.html
@@ -86,7 +86,7 @@ If the sample size is large, then this formula is a close approximation when usi
     question_text="Calculate the upper value of the 95% confidence interval if sample mean = 100, population standard deviation = 75, sample size = 225"
     correct_answer="109.2"
     tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100-9.2=109.2$"
+    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100+9.2=109.2$"
 %}
 
 

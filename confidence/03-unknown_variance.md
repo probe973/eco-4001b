@@ -52,12 +52,12 @@ This can written as (44.67, 55.33)
 
 ### Questions
 
-1. From a sample of size 20, a sample mean of 156 and a sample standard eviation of 12.2 is found.
+1. From a sample of size 20, a sample mean of 156 and a sample standard deviation of 12.2 is found.
 
 {% include question_numerical.html
     id="ciT1a"
     title="1 a"
-    question_text="What would be the critical t value for a 95% confidence inteval, correct to 3 d.p.?"
+    question_text="What would be the critical t value for a 95% confidence interval, correct to 3 d.p.?"
     correct_answer="2.093"
     tolerance="0.001"
     solution_text="Use the calculator or tables, with one-sided 0.025, and degrees of freedom of 19."

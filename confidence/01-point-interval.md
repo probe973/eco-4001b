@@ -38,12 +38,12 @@ It's 95%, or whatever percent is given, because when a researcher calculates the
 
 </div>
 
-Let’s say that a researcher is interested in the mean length of time people had symptoms of a particular virus.  They collect a sample from the population of people who had the virus and calculate the mean length to be 6.4 days.  
+Let’s say that a researcher is interested in the mean length of time people spend using a particular product each year.  They collect a sample from the population of people who have the product and calculate the mean length to be 6.4 days.  
 
 {% include question_numerical.html
     id="ciq1"
     title="1"
-    question_text="With the information given, what would be the researcher’s estimate of the population mean number of days people were ill with the virus?"
+    question_text="With the information given, what would be the researcher’s estimate of the population mean number of days people are using the product?"
     correct_answer="6.4"
     tolerance="0.01"
     solution_text="The best estimate for the population mean would be the sample mean: 6.4 days"
@@ -55,7 +55,7 @@ Using other statistics collected from the sample, the researcher also calculates
     id="ciq2"
     title="2"
     question_text="What is the interpretation of this confidence interval?"
-    options="wrong1::We are 5% confident that the true mean is between 4.6 and 8.2 days||correct::We are 95% confident that the true mean is between 4.6 and 8.2 days||wrong2::We are 95% confident that the true mean is outside of 4.6 and 8.2 days||wrong3::We have no idea how many days people had the virus for on average"
+    options="wrong1::We are 5% confident that the true mean is between 4.6 and 8.2 days||correct::We are 95% confident that the true mean is between 4.6 and 8.2 days||wrong2::We are 95% confident that the true mean is outside of 4.6 and 8.2 days||wrong3::We have no idea how many days people use the product for for on average"
     correct_answer="correct"
     solution_text="We are 95% confident that the true mean is between 4.6 and 8.2 days"
 %}
