@@ -42,6 +42,8 @@ For a 95% confidence interval for the mean, using the calculator:
 
 You should find that $t_\text{critical}=2.131$.
 
+You can also use the t-table <a href="/eco-4001b/t-table/" target="_blank">here</a> to get a the critical t-value.  This can be used in confidence intervals and t-tests.
+
 Therefore the 95% confidence interval is:
 
 $$50 \pm 2.131 \times \frac{10}{\sqrt{16}} = 16 \pm 5.33$$
@@ -52,11 +54,11 @@ This can written as (44.67, 55.33)
 
 ### Questions
 
-1. From a sample of size 20, a sample mean of 156 and a sample standard deviation of 12.2 is found.
+From a sample of size 20, a sample mean of 156 and a sample standard deviation of 12.2 is found.
 
 {% include question_numerical.html
     id="ciT1a"
-    title="1 a"
+    title="1a"
     question_text="What would be the critical t value for a 95% confidence interval, correct to 3 d.p.?"
     correct_answer="2.093"
     tolerance="0.001"
@@ -72,24 +74,17 @@ This can written as (44.67, 55.33)
     solution_text="$156 \pm 2.093 \times \frac{12.2}{\sqrt{20}}$"
 %}
 
-2. From a sample of size 12, a sample mean of 100 and a sample standard deviation of 15 is found.
+From a sample of size 12, a sample mean of 100 and a sample standard deviation of 15 is found.
 
-{% include question_numerical.html
-    id="ciT2a"
-    title="2 a"
-    question_text="What is the lower bound of the 90% confidence interval for the mean, correct to 2 d.p.?"
-    correct_answer="92.22"
+{% include question_confidence_interval.html
+    id="ciqT2"
+    title="2"
+    question_text="Calculate the 90% confidence interval for the mean, correct to 2 d.p."
+    lower_answer="92.22"
+    upper_answer="107.78"
     tolerance="0.005"
-    solution_text="Critical t value is 1.796, so lower bound will be $100 - 1.796 \times \frac{15}{\sqrt{12}}$"
-%}
+    solution_text="Critical t value is 1.796, so $100 \pm 1.796 \times \frac{15}{\sqrt{12}}$ <br> (92.22, 107.78)"
 
-{% include question_numerical.html
-    id="ciT2b"
-    title="2 b"
-    question_text="What is the upper bound of the 90% confidence interval for the mean, correct to 2 d.p.?"
-    correct_answer="107.78"
-    tolerance="0.005"
-    solution_text="Critical t value is 1.796, so lower bound will be $100 + 1.796 \times \frac{15}{\sqrt{12}}$"
 %}
 
 <div style="text-align: center; margin-top: 3em;">

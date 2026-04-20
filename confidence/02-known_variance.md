@@ -17,76 +17,48 @@ If the sample size is large, then this formula is a close approximation when usi
 
 </div>
 
-{% include question_numerical.html
-    id="ciq6ai"
-    title="1 a"
-    question_text="Calculate the lower value of the 95% confidence interval if sample mean = 40, population standard deviation = 10, sample size = 100"
-    correct_answer="38.04"
-    tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{10}{\sqrt{10}}=1.96$ so  $40-1.96=38.04$"
+{% include question_confidence_interval.html
+    id="ciq1"
+    title="1"
+    question_text="Calculate the 95% confidence interval if sample mean = 40, population standard deviation = 10, sample size = 100, correct to 2 d.p."
+    lower_answer="38.04"
+    upper_answer="41.96"
+    tolerance="0.005"
+    solution_text="The margin of error is $1.96 \times \frac{10}{\sqrt{10}}=1.96$ <br> $40 \pm 1.96 = (38.04, 41.96)$"
+
 %}
 
-{% include question_numerical.html
-    id="ciq6aii"
-    title="1 b"
-    question_text="Calculate the upperr value of the 95% confidence interval if sample mean = 40, population standard deviation = 10, sample size = 100"
-    correct_answer="41.96"
-    tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{10}{\sqrt{10}}=1.96$ so  $40+1.96=41.96$"
+{% include question_confidence_interval.html
+    id="ciq2"
+    title="2"
+    question_text="Calculate the 95% confidence interval if sample mean = 100, population standard deviation = 15, sample size = 25, correct to 2 d.p."
+    lower_answer="94.12"
+    upper_answer="105.88"
+    tolerance="0.005"
+    solution_text="The margin of error is $1.96 \times \frac{15}{\sqrt{25}}=5.88$ <br> $100 \pm 5.88 = (94.12, 105.88)$"
+
 %}
 
-{% include question_numerical.html
-    id="ciq6bi"
-    title="2 a"
-    question_text="Calculate the lower value of the 95% confidence interval if sample mean = 100, population standard deviation = 15, sample size = 25"
-    correct_answer="94.12"
-    tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{15}{\sqrt{25}}=5.88$ so  $100-5.88=94.12$"
+{% include question_confidence_interval.html
+    id="ciq3"
+    title="3"
+    question_text="Calculate the 95% confidence interval if sample mean = 100, population standard deviation = 15, sample size = 225, correct to 2 d.p."
+    lower_answer="98.04"
+    upper_answer="101.96"
+    tolerance="0.005"
+    solution_text="The margin of error is $1.96 \times \frac{15}{\sqrt{225}}=1.96$ <br> $100 \pm 1.96 = (98.04, 101.96)$"
+
 %}
 
-{% include question_numerical.html
-    id="ciq6bii"
-    title="2 b"
-    question_text="Calculate the upper value of the 95% confidence interval if sample mean = 100, population standard deviation = 15, sample size = 25"
-    correct_answer="105.88"
-    tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{15}{\sqrt{25}}=5.88$ so  $100+5.88=105.88$"
-%}
+{% include question_confidence_interval.html
+    id="ciq4"
+    title="4"
+    question_text="Calculate the 95% confidence interval if sample mean = 100, population standard deviation = 75, sample size = 225, correct to 2 d.p."
+    lower_answer="90.2"
+    upper_answer="109.2"
+    tolerance="0.005"
+    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ <br> $100 \pm 9.2 = (90.2, 109.2)$"
 
-{% include question_numerical.html
-    id="ciq6ci"
-    title="3 a"
-    question_text="Calculate the lower value of the 95% confidence interval if sample mean = 100, population standard deviation = 15, sample size = 225"
-    correct_answer="98.04"
-    tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{15}{\sqrt{225}}=1.96$ so  $100-1.96=98.04$"
-%}
-
-{% include question_numerical.html
-    id="ciq6cii"
-    title="3b "
-    question_text="Calculate the upper value of the 95% confidence interval if sample mean = 100, population standard deviation = 15, sample size = 225"
-    correct_answer="101.96"
-    tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{15}{\sqrt{225}}=1.96$ so  $100+1.96=101.96$"
-%}
-
-{% include question_numerical.html
-    id="ciq6di"
-    title="4 a"
-    question_text="Calculate the lower value of the 95% confidence interval if sample mean = 100, population standard deviation = 75, sample size = 225"
-    correct_answer="90.2"
-    tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100-9.2=90.8$"
-%}
-
-{% include question_numerical.html
-    id="ciq6dii"
-    title="4 b"
-    question_text="Calculate the upper value of the 95% confidence interval if sample mean = 100, population standard deviation = 75, sample size = 225"
-    correct_answer="109.2"
-    tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100+9.2=109.2$"
 %}
 
 

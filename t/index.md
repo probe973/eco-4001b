@@ -51,7 +51,7 @@ Decide whether the following requires the use of a one-tailed or two-tailed test
 
 {% include question_multiple_choice.html
     id="t1c"
-    title="1 b"
+    title="1 c"
     question_text="To test whether a new road safety scheme has decreased the number of road accidents"
     options="one::One-tail||two::Two-tail"
     correct_answer="one"

@@ -303,3 +303,36 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+function checkConfidenceInterval(id, correctLower, correctUpper, tolerance) {
+
+    const lowerInput = document.getElementById(`lower-${id}`);
+    const upperInput = document.getElementById(`upper-${id}`);
+    const feedback   = document.getElementById(`feedback-${id}`);
+
+    const userLower = parseFloat(lowerInput.value);
+    const userUpper = parseFloat(upperInput.value);
+
+    if (isNaN(userLower) || isNaN(userUpper)) {
+        feedback.innerHTML = "<p>Please enter values for both bounds.</p>";
+        return;
+    }
+
+    if (userLower >= userUpper) {
+        feedback.innerHTML = "<p>The lower bound must be less than the upper bound.</p>";
+        return;
+    }
+
+    const lowerCorrect = Math.abs(userLower - correctLower) <= tolerance;
+    const upperCorrect = Math.abs(userUpper - correctUpper) <= tolerance;
+
+    if (lowerCorrect && upperCorrect) {
+        feedback.innerHTML = "<p><strong>Correct!</strong></p>";
+    } else {
+        feedback.innerHTML = `
+            <p><strong>Not quite.</strong></p>
+            <p>Your interval: (${userLower}, ${userUpper})</p>
+        `;
+    }
+}
