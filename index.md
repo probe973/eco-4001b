@@ -94,16 +94,8 @@ They will provide you with the chance to practice questions on areas of statisti
             </div>
         </div>
     </a>
-
-    <a href="{{ "/hypothesis/" | relative_url }}" class="card">
-        <div class="card-content">
-            <div class="card-text">
-                <h3>Hypothesis Testing</h3>
-                <p>Null and alternative hypotheses; interpreting results</p>
-            </div>
-        </div>
-    </a>
 </div>
+
 
 ## Workshop 6
 <div class="card-menu">
