@@ -376,16 +376,16 @@ A customer is selected at random, in a prize draw.
     question_text="Given that the customer booked economy, what is the probability that they booked via the internet?  Give answer as a decimal correct to 2 decimal places."
     correct_answer="0.49"
     tolerance="0.005"
-    solution_text="$P(\text{internet} \sim \text{economy})=\frac{140}{285}=\frac{28}{57}=0.49$"
+    solution_text="$P(\text{internet} \mid \text{economy})=\frac{140}{285}=\frac{28}{57}=0.49$"
 %}
 
 {% include question_multiple_choice.html
     id="review_4e"
     title="4 e"
     question_text="Are the events booking economy and booking via the internet independent? Give an explanation for your answer."
-    options="a::$P(\text{internet}) = P(\text{internet} \sim \text{economy})$, so not independent||b::$P(\text{internet}) = P(\text{internet} \sim \text{economy})$, so independent||c::$P(\text{internet}) \neq P(\text{internet} \sim \text{economy})$, so not independent||d::$P(\text{internet}) \neq P(\text{internet} \sim \text{economy})$, so independent"
+    options="a::$P(\text{internet}) = P(\text{internet} \mid \text{economy})$, so not independent||b::$P(\text{internet}) = P(\text{internet} \mid \text{economy})$, so independent||c::$P(\text{internet}) \neq P(\text{internet} \mid \text{economy})$, so not independent||d::$P(\text{internet}) \neq P(\text{internet} \mid \text{economy})$, so independent"
     correct_answer="c"
-    solution_text="$P(\text{internet}) \neq P(\text{internet} \sim \text{economy})$ implies not independent, and here we have $P(\text{internet}) = 0.47, P(\text{intenet} \sim \text{economy}) = 0.49"
+    solution_text="$P(\text{internet}) \neq P(\text{internet} \mid \text{economy})$ implies not independent, and here we have $P(\text{internet}) = 0.47, P(\text{intenet} \mid \text{economy}) = 0.49"
 %}
 
 {% include question_numerical.html
@@ -410,7 +410,7 @@ A customer is selected at random, in a prize draw.
     question_text="What is the probability that the customer booked either business or business plus? Give answer as a decimal correct to 2 decimal places."
     correct_answer="0.75"
     tolerance="0.005"
-    solution_text="$P(\text{not travel agent \sim first class})=\frac{45+25}{93}=\frac{70}{93}=0.75$"
+    solution_text="$P(\text{not travel agent \mid first class})=\frac{45+25}{93}=\frac{70}{93}=0.75$"
 %}
 
 ---
@@ -452,7 +452,7 @@ For a randomly selected flight:
     question_text="What is the probability that the service departs and arrives on time? Give answer as a decimal correct to 4 decimal places."
     correct_answer="0.52"
     tolerance="0.00005"
-    solution_text="P(departs on time AND arrives on time) <br> = $P(\text{departs on time}) \times P(\text{arrives on time} \sim \text{departs on time}) <br> $P(\text{departs on time AND arrives on time}) = 0.65 \times 0.8 = 0.52$"
+    solution_text="P(departs on time AND arrives on time) <br> = $P(\text{departs on time}) \times P(\text{arrives on time} \mid \text{departs on time}) <br> $P(\text{departs on time AND arrives on time}) = 0.65 \times 0.8 = 0.52$"
 %}
 
 {% include question_numerical.html
@@ -470,7 +470,7 @@ For a randomly selected flight:
     question_text="Given that the service arrived on time, what is the probability that it departed on time? Give answer as a decimal correct to 4 decimal places."
     correct_answer="0.856"
     tolerance="0.00005"
-    solution_text="$P(\text{departed on time} \sim \text{arrived on time}) = \frac{0.52}{0.6075}=0.856$"
+    solution_text="$P(\text{departed on time} \mid \text{arrived on time}) = \frac{0.52}{0.6075}=0.856$"
 %}
 
 ---
