@@ -95,7 +95,7 @@ Historically the mean annual income of business class ticket customers was £470
     id="review_1bi"
     title="1 b i"
     question_text="What would the null hypothesis of this test be?"
-    options="eq::$H_0: \mu = 47$ || neq::$H_0: \mu \neq 47$ || gt::$H_0 \mu > 47 || lt::$H_0 \mu < 47$"
+    options="eq::$H_0: \mu = 47$ || neq::$H_0: \mu \neq 47$ || gt::$H_0 \mu > 47$ || lt::$H_0 \mu < 47$"
     correct_answer="eq"
     solution_text="The null hypothesis is that the mean is not changed from the 47."
 %}
