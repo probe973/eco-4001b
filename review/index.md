@@ -5,7 +5,6 @@ title: Review
 
 # ECO-4001B Review Questions
 
-Underground Airways is conducting a review of their customers and their own operations.
 
 ## Formula and tables
 
@@ -35,6 +34,7 @@ Click <a href="/eco-4001b/t-table/" target="_blank">here</a> to get a the **one-
 
 ## Questions
 
+Underground Airways is conducting a review of their customers and their own operations.
 
 ### Question 1
 
