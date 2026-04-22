@@ -213,7 +213,7 @@ A t-test is carried out to determine if the mean is significantly different from
 $$t(19) = 2.6307, p = .0165$$
 
 {% include question_dropdown.html
-    id="review_2b
+    id="review_2b"
     title="2 b"
     question_text="Interpret this result."
     solution_text="$p<0.05$ and so the null hypothesis would be rejected at the 5% level. <br> At the 5% level there is evidence that the mean salary differs from £52000. <br><br> As $p>0.01$ there is not enough evidence to reject at the 1% level."
@@ -282,7 +282,7 @@ A sample of the Underground Airways customers were asked to rate their experienc
 %}
 
 {% include question_dropdown.html
-    id="review_3d
+    id="review_3d"
     title="3 d"
     question_text="At the 5% significance level what conclusion would you draw about the difference in satisfaction rating between the two passenger groups?"
     solution_text="Two-tail test. The critical t value, using tables, is 1.96. <br> Since 2.46 exceeds this critical value, we will reject the null hypothesis. There is evidence of a difference between the mean satisfaction scores of business and business plus customers."
@@ -397,7 +397,7 @@ A customer is selected at random, in a prize draw.
 %}
 
 {% include question_dropdown.html
-    id="review_4g
+    id="review_4g"
     title="4 g"
     question_text="Explain why the events booking business and booking business plus are mutually exclusive."
     solution_text="Each customer cannot book both business and business plus for one seat. Therefore the probability of both happening is zero, this defines mutually exclusive events."
