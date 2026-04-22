@@ -95,7 +95,7 @@ Historically the mean annual income of business class ticket customers was £470
     id="review_1bi"
     title="1 b i"
     question_text="What would the null hypothesis of this test be?"
-    options="eq::$H_0: \mu = 47$ || neq::$H_0: \mu \neq 47$ || gt::$H_0 \mu > 47$ || lt::$H_0 \mu < 47$"
+    options="eq::$H_0: \mu = 47$ || neq::$H_0: \mu \neq 47$ || gt::$H_0: \mu > 47$ || lt::$H_0: \mu < 47$"
     correct_answer="eq"
     solution_text="The null hypothesis is that the mean is not changed from the 47."
 %}
@@ -104,7 +104,7 @@ Historically the mean annual income of business class ticket customers was £470
     id="review_1bii"
     title="1 b ii"
     question_text="What would the alternative hypothesis of this test be?"
-    options="eq::$H_1: \mu = 47$ ||neq::$H_1: \mu \neq 47$ ||gt::$H_1 \mu > 47$ ||lt::$H_1 \mu < 47$"
+    options="eq::$H_1: \mu = 47$ ||neq::$H_1: \mu \neq 47$ ||gt::$H_1: \mu > 47$ ||lt::$H_1: \mu < 47$"
     correct_answer="neq"
     solution_text="Testing for a difference from 47, so not equal."
 %}
@@ -258,7 +258,7 @@ A sample of the Underground Airways customers were asked to rate their experienc
     id="review_3a"
     title="3 a"
     question_text="What are the null and alternative hypotheses of the two sample test?"
-    options="eq::$H_0: \mu_B = \mu_P$  $H_1: \mu_B = \mu_P$|| neq::$H_0: \mu_B = \mu_P$  $H_1: \mu_B \neq \mu_P$ || gt::$H_0: \mu_B = \mu_P$  $H_1 \mu_B > \mu_P$ || lt::$H_0: \mu_B = \mu_P$  $H_1 \mu_B < \mu_P$"
+    options="eq::$H_0: \mu_B = \mu_P$  $H_1: \mu_B = \mu_P$|| neq::$H_0: \mu_B = \mu_P$  $H_1: \mu_B \neq \mu_P$ || gt::$H_0: \mu_B = \mu_P$  $H_1: \mu_B > \mu_P$ || lt::$H_0: \mu_B = \mu_P$  $H_1: \mu_B < \mu_P$"
     correct_answer="neq"
     solution_text="The null hypothesis is that the mean of the two groups are equal.  Looking for a difference so the alternative hypothesis is that the two means are not equal."
 %}
@@ -328,6 +328,7 @@ Underground Airways record data, over a particular week, for how the tickets are
           <td>90</td>
           <td>65</td>
           <td>25</td>
+          <td>320</td>
       </tr>
       <tr>
           <td>TOTAL</td>
@@ -375,16 +376,16 @@ A customer is selected at random, in a prize draw.
     question_text="Given that the customer booked economy, what is the probability that they booked via the internet?  Give answer as a decimal correct to 2 decimal places."
     correct_answer="0.49"
     tolerance="0.005"
-    solution_text="$P(\text{internet \sim economy)}=\frac{140}{285}=\frac{28}{57}=0.49$"
+    solution_text="$P(\text{internet} \sim \text{economy})=\frac{140}{285}=\frac{28}{57}=0.49$"
 %}
 
 {% include question_multiple_choice.html
     id="review_4e"
     title="4 e"
     question_text="Are the events booking economy and booking via the internet independent? Give an explanation for your answer."
-    options="a::$P(\text{internet}) = P(\text{internet \sim economy)$, so not independent||b::$P(\text{internet}) = P(\text{internet \sim economy)$, so independent||c::$P(\text{internet}) \neq P(\text{internet \sim economy)$, so not independent||d::$P(\text{internet}) \neq P(\text{internet \sim economy)$, so independent"
+    options="a::$P(\text{internet}) = P(\text{internet} \sim \text{economy})$, so not independent||b::$P(\text{internet}) = P(\text{internet} \sim \text{economy})$, so independent||c::$P(\text{internet}) \neq P(\text{internet} \sim \text{economy})$, so not independent||d::$P(\text{internet}) \neq P(\text{internet} \sim \text{economy})$, so independent"
     correct_answer="c"
-    solution_text="$P(\text{internet}) \neq P(\text{internet \sim economy)$ implies not independent, and here we have $P(\text{internet}) = 0.47, P(\text{intenet \sim economy}) = 0.49"
+    solution_text="$P(\text{internet}) \neq P(\text{internet} \sim \text{economy})$ implies not independent, and here we have $P(\text{internet}) = 0.47, P(\text{intenet} \sim \text{economy}) = 0.49"
 %}
 
 {% include question_numerical.html
@@ -451,7 +452,7 @@ For a randomly selected flight:
     question_text="What is the probability that the service departs and arrives on time? Give answer as a decimal correct to 4 decimal places."
     correct_answer="0.52"
     tolerance="0.00005"
-    solution_text="P(departs on time AND arrives on time) <br> = $P(\text{departs on time}) \times P(\text{arrives on time \sim departs on time}) <br> $P(\text{departs on time AND arrives on time}) = 0.65 \times 0.8 = 0.52$"
+    solution_text="P(departs on time AND arrives on time) <br> = $P(\text{departs on time}) \times P(\text{arrives on time} \sim \text{departs on time}) <br> $P(\text{departs on time AND arrives on time}) = 0.65 \times 0.8 = 0.52$"
 %}
 
 {% include question_numerical.html
@@ -469,7 +470,7 @@ For a randomly selected flight:
     question_text="Given that the service arrived on time, what is the probability that it departed on time? Give answer as a decimal correct to 4 decimal places."
     correct_answer="0.856"
     tolerance="0.00005"
-    solution_text="$P(\text{departed on time \sim arrived on time}) = \frac{0.52}{0.6075}=0.856$"
+    solution_text="$P(\text{departed on time} \sim \text{arrived on time}) = \frac{0.52}{0.6075}=0.856$"
 %}
 
 ---
